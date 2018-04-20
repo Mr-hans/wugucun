@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title></title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
+		<link rel="stylesheet" type="text/css" href="libs/swiper3.14/css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/calendar.css"/>
+		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
+		
+		<link rel="stylesheet" type="text/css" href="css/z-main.css"/>
+	</head>
+	<body class="pub-bg">
+		<!--头部s-->
+		<header class="pub-head z-goods-detail-head flexc z-transition2 z-hostel-head">
+			<div class="go-back"></div>
+			<!--<div class="head-title f32 hide">民宿详情</div>--> 
+			<!--右边分享-->
+			<a href="javascript:;" class="head-r flexc head-edit head-share"></a>
+			<!--右边收藏-->
+			<a href="javascript:;" class="head-r flexc head-edit head-collection"></a>
+		</header>
+		<!--头部e-->
+		<!--轮播s-->
+		<section class="z-hostel-detail-banner swiper-container">
+			<div class="swiper-wrapper">
+			    <div class="swiper-slide">
+			    	<a href=""><img src="images/meal-detail-img1.jpg" alt="" /></a>
+			    </div>
+			    <div class="swiper-slide">
+			    	<a href=""><img src="images/meal-detail-img1.jpg" alt="" /></a>
+			    </div>
+			    <div class="swiper-slide">
+			    	<a href=""><img src="images/meal-detail-img1.jpg" alt="" /></a>
+			    </div>
+			    <div class="swiper-slide">
+			    	<a href=""><img src="images/meal-detail-img1.jpg" alt="" /></a>
+			    </div>
+			    <div class="swiper-slide">
+			    	<a href=""><img src="images/meal-detail-img1.jpg" alt="" /></a>
+			    </div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</section>
+		<!--轮播e-->
+		<div class="bg-white">
+			<div class="jus-b ali-c z-restaurant-msg">
+				<div class="flex1">
+					<h3 class="z-restaurant-name">五谷原味（1号店）</h3>
+					<ul class="z-restaurant-advantage flex-wrap">
+						<li>安静</li>
+						<li>环境好</li>
+						<li>服务好</li>
+						<li>舒适</li>
+					</ul>
+				</div>
+				<!--客服-->
+				<div class="z-contact-number"></div>
+			</div>
+			<a href="reserve-meal-evaluate.html" class="z-restaurant-evaluate ali-c f28 pub-padding3">
+				<div class="mine-name flex1">用户评价(219)</div>
+				<div class="pub-right"></div>
+			</a>
+		</div>
+		<!--地址-->
+		<ul class="mine-list">
+			<li id="checkinout">
+				<a href="javascript:;" class="ali-c" id="firstSelect">
+					<div class="z-meal-detail-add flex1">江西省上高县野市乡上棠2号</div>
+					<div class="pub-right"></div>
+				</a>
+			</li>
+		</ul>
+		<!--订餐分类-->
+		<section class="detail-and-comment mt18">
+			<div class="title flex">
+				<div class="flex1 flexc on"><span class="border-tp">包厢</span></div>
+				<div class="flex1 flexc"><span class="border-tp">散座</span></div>
+				<div class="flex1 flexc"><span class="border-tp">酒席</span></div>
+				<div class="flex1 flexc"><span class="border-tp">外送</span></div>
+			</div>
+			<section class="con-box">
+				<!--包厢-->
+				<div class="item con-box-detail">
+					<ul class="z-reserve-meal-list">
+						<li class="jus-b">
+							<a href="rm-private-room.html" class="z-meal-img">
+								<img src="images/meal-reserve-img1.jpg" class="fill-img"/>
+							</a>
+							<a href="rm-private-room.html" class="z-meal-msg flex1">
+								<h3 class="f28"><span class="z-mealclass-name">1号大包厢</span>可容纳15-20人</h3>
+								<p class="f24 pub-greya"><span>安静</span><span>空间大</span><span>舒适</span></p>
+							</a>
+							<div class="ali-c"><a href="javascript:;" class="z-blockbtn-green z-reserve-meal-btn">预定</a></div>
+						</li>
+						<li class="jus-b">
+							<a href="rm-private-room.html" class="z-meal-img">
+								<img src="images/meal-reserve-img1.jpg" class="fill-img"/>
+							</a>
+							<a href="rm-private-room.html" class="z-meal-msg flex1">
+								<h3 class="f28"><span class="z-mealclass-name">2号大包厢</span>可容纳10-15人</h3>
+								<p class="f24 pub-greya"><span>安静</span><span>空间大</span><span>舒适</span></p>
+							</a>
+							<div class="ali-c"><a href="javascript:;" class="z-blockbtn-green z-reserve-meal-btn">预定</a></div>
+						</li>
+						<li class="jus-b">
+							<a href="rm-private-room.html" class="z-meal-img">
+								<img src="images/meal-reserve-img1.jpg" class="fill-img"/>
+							</a>
+							<a href="rm-private-room.html" class="z-meal-msg flex1">
+								<h3 class="f28"><span class="z-mealclass-name">3号大包厢</span>可容纳5-10人</h3>
+								<p class="f24 pub-greya"><span>安静</span><span>空间大</span><span>舒适</span></p>
+							</a>
+							<div class="ali-c"><a href="javascript:;" class="z-blockbtn-green z-reserve-meal-btn">预定</a></div>
+						</li>
+					</ul>
+				</div>
+				<!--散座-->
+				<div class="item con-box-comment hide">
+					<ul class="z-reserve-meal-list">
+						<li class="jus-b">
+							<a href="rm-private-room.html" class="z-meal-img">
+								<img src="images/meal-reserve-img1.jpg" class="fill-img"/>
+							</a>
+							<a href="rm-private-room.html" class="z-meal-msg flex1">
+								<h3 class="f28"><span class="z-mealclass-name">散座1</span>5-8人</h3>
+								<p class="f24 pub-greya"><span>安静</span><span>空间大</span><span>舒适</span></p>
+							</a>
+							<div class="ali-c"><a href="javascript:;" class="z-blockbtn-green z-reserve-meal-btn">预定</a></div>
+						</li>
+						<li class="jus-b">
+							<a href="rm-private-room.html" class="z-meal-img">
+								<img src="images/meal-reserve-img1.jpg" class="fill-img"/>
+							</a>
+							<a href="rm-private-room.html" class="z-meal-msg flex1">
+								<h3 class="f28"><span class="z-mealclass-name">散座2</span>3-4人</h3>
+								<p class="f24 pub-greya"><span>安静</span><span>空间大</span><span>舒适</span></p>
+							</a>
+							<div class="ali-c"><a href="javascript:;" class="z-blockbtn-green z-reserve-meal-btn">预定</a></div>
+						</li>
+						<li class="jus-b">
+							<a href="rm-private-room.html" class="z-meal-img">
+								<img src="images/meal-reserve-img1.jpg" class="fill-img"/>
+							</a>
+							<a href="rm-private-room.html" class="z-meal-msg flex1">
+								<h3 class="f28"><span class="z-mealclass-name">散座3</span>2人</h3>
+								<p class="f24 pub-greya"><span>安静</span><span>空间大</span><span>舒适</span></p>
+							</a>
+							<div class="ali-c"><a href="javascript:;" class="z-blockbtn-green z-reserve-meal-btn">预定</a></div>
+						</li>
+					</ul>
+				</div>
+				<!--酒席-->
+				<div class="item con-box-comment hide">
+					<ul class="z-reserve-meal-list">
+						<li class="jus-b">
+							<a href="rm-private-room.html" class="z-meal-img">
+								<img src="images/meal-reserve-img1.jpg" class="fill-img"/>
+							</a>
+							<a href="rm-private-room.html" class="z-meal-msg flex1">
+								<h3 class="f28"><span class="z-mealclass-name">酒席套餐一</span></h3>
+								<p class="f24 pub-greya"><span>安静</span><span>空间大</span><span>舒适</span></p>
+								<div class="z-mealclass-price"><b class="f32 pub-red">¥699.00</b>&nbsp;<s class="pub-greyb f24">¥ 999.00</s></div>
+							</a>
+							<div class="ali-c"><a href="javascript:;" class="z-blockbtn-green z-reserve-meal-btn">预定</a></div>
+						</li>
+						<li class="jus-b">
+							<a href="rm-private-room.html" class="z-meal-img">
+								<img src="images/meal-reserve-img1.jpg" class="fill-img"/>
+							</a>
+							<a href="rm-private-room.html" class="z-meal-msg flex1">
+								<h3 class="f28"><span class="z-mealclass-name">酒席套餐二</span></h3>
+								<p class="f24 pub-greya"><span>安静</span><span>空间大</span><span>舒适</span></p>
+								<div class="z-mealclass-price"><b class="f32 pub-red">¥699.00</b>&nbsp;<s class="pub-greyb f24">¥ 999.00</s></div>
+							</a>
+							<div class="ali-c"><a href="javascript:;" class="z-blockbtn-green z-reserve-meal-btn">预定</a></div>
+						</li>
+						<li class="jus-b">
+							<a href="rm-private-room.html" class="z-meal-img">
+								<img src="images/meal-reserve-img1.jpg" class="fill-img"/>
+							</a>
+							<a href="rm-private-room.html" class="z-meal-msg flex1">
+								<h3 class="f28"><span class="z-mealclass-name">酒席套餐三</span></h3>
+								<p class="f24 pub-greya"><span>安静</span><span>空间大</span><span>舒适</span></p>
+								<div class="z-mealclass-price"><b class="f32 pub-red">¥699.00</b>&nbsp;<s class="pub-greyb f24">¥ 999.00</s></div>
+							</a>
+							<div class="ali-c"><a href="javascript:;" class="z-blockbtn-green z-reserve-meal-btn">预定</a></div>
+						</li>
+					</ul>
+				</div>
+				<!--外送-->
+				<div class="item con-box-comment hide z-delivery-box">
+					<!--分类列表-->
+					<section class="classify bg-white z-ordermeal-list">
+						<div class="classify-nav">
+							<ul class="sider-list">
+								<li class="li-1 checked"><a href="#MainArea1" class="classify-btn">商家推荐</a></li>
+								<li class="li-2"><a href="#MainArea2" class="classify-btn">折扣优惠</a></li>
+								<li class="li-3"><a href="#MainArea3" class="classify-btn">原味新品</a></li>
+								<li class="li-4"><a href="#MainArea4" class="classify-btn">特色小炒</a></li>
+								<li class="li-5"><a href="#MainArea5" class="classify-btn">经典烧菜</a></li>
+								<li class="li-6"><a href="#MainArea6" class="classify-btn">汤类</a></li>
+								<li class="li-7"><a href="#MainArea7" class="classify-btn">酒水饮料</a></li>
+								<li class="li-8"><a href="#MainArea8" class="classify-btn">米饭主食</a></li>
+							</ul>
+						</div>
+						<div class="classify-goods pub-goods">
+							<ul class="classify-list" id="MainArea1">
+								<li class="jus-b">
+									<div class="z-meal-goods-img">
+										<img src="images/z-ordermeal-img1.jpg" class="fill-img"/>
+									</div>
+									<div class="z-meal-msg flex1">
+										<h3 class="f28 fb">肉末蒸豆腐1</h3>
+										<div class="f24 pub-greya flex">
+											<span class="ali-c">推荐指数</span>
+											<div class="z-star-level ali-c">
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+											</div>
+										</div>
+										<div class="z-meal-price jus-b">
+											<p class="f3 pub-red ali-c">￥35.00<span class="f24 pub-greya">/份</span></p>
+											<div class="pub-updown flex">
+												<input type="button" class="z-pub-updown-down flex1 z-updown-hs"/>
+												<input type="text" class="pub-updown-num only-number z-updown-hs" value="0"/>
+												<input type="button" class="pub-updown-up flex1"/>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="classify-list" id="MainArea2">
+								<li class="jus-b">
+									<div class="z-meal-goods-img">
+										<img src="images/z-ordermeal-img1.jpg" class="fill-img"/>
+									</div>
+									<div class="z-meal-msg flex1">
+										<h3 class="f28 fb">肉末蒸豆腐2</h3>
+										<div class="f24 pub-greya flex">
+											<span class="ali-c">推荐指数</span>
+											<div class="z-star-level ali-c">
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+											</div>
+										</div>
+										<div class="z-meal-price jus-b">
+											<p class="f3 pub-red ali-c">￥35.00<span class="f24 pub-greya">/份</span></p>
+											<div class="pub-updown flex">
+												<input type="button" class="z-pub-updown-down flex1 z-updown-hs"/>
+												<input type="text" class="pub-updown-num only-number z-updown-hs" value="0"/>
+												<input type="button" class="pub-updown-up flex1"/>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="classify-list" id="MainArea3">
+								<li class="jus-b">
+									<div class="z-meal-goods-img">
+										<img src="images/z-ordermeal-img1.jpg" class="fill-img"/>
+									</div>
+									<div class="z-meal-msg flex1">
+										<h3 class="f28 fb">肉末蒸豆腐3</h3>
+										<div class="f24 pub-greya flex">
+											<span class="ali-c">推荐指数</span>
+											<div class="z-star-level ali-c">
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+											</div>
+										</div>
+										<div class="z-meal-price jus-b">
+											<p class="f3 pub-red ali-c">￥35.00<span class="f24 pub-greya">/份</span></p>
+											<div class="pub-updown flex">
+												<input type="button" class="z-pub-updown-down flex1 z-updown-hs"/>
+												<input type="text" class="pub-updown-num only-number z-updown-hs" value="0"/>
+												<input type="button" class="pub-updown-up flex1"/>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="jus-b">
+									<div class="z-meal-goods-img">
+										<img src="images/z-ordermeal-img1.jpg" class="fill-img"/>
+									</div>
+									<div class="z-meal-msg flex1">
+										<h3 class="f28 fb">肉末蒸豆腐</h3>
+										<div class="f24 pub-greya flex">
+											<span class="ali-c">推荐指数</span>
+											<div class="z-star-level ali-c">
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+											</div>
+										</div>
+										<div class="z-meal-price jus-b">
+											<p class="f3 pub-red ali-c">￥35.00<span class="f24 pub-greya">/份</span></p>
+											<div class="pub-updown flex">
+												<input type="button" class="z-pub-updown-down flex1 z-updown-hs"/>
+												<input type="text" class="pub-updown-num only-number z-updown-hs" value="0"/>
+												<input type="button" class="pub-updown-up flex1"/>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="classify-list" id="MainArea4">
+								<li class="jus-b">
+									<div class="z-meal-goods-img">
+										<img src="images/z-ordermeal-img1.jpg" class="fill-img"/>
+									</div>
+									<div class="z-meal-msg flex1">
+										<h3 class="f28 fb">肉末蒸豆腐4</h3>
+										<div class="f24 pub-greya flex">
+											<span class="ali-c">推荐指数</span>
+											<div class="z-star-level ali-c">
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+											</div>
+										</div>
+										<div class="z-meal-price jus-b">
+											<p class="f3 pub-red ali-c">￥35.00<span class="f24 pub-greya">/份</span></p>
+											<div class="pub-updown flex">
+												<input type="button" class="z-pub-updown-down flex1 z-updown-hs"/>
+												<input type="text" class="pub-updown-num only-number z-updown-hs" value="0"/>
+												<input type="button" class="pub-updown-up flex1"/>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="jus-b">
+									<div class="z-meal-goods-img">
+										<img src="images/z-ordermeal-img1.jpg" class="fill-img"/>
+									</div>
+									<div class="z-meal-msg flex1">
+										<h3 class="f28 fb">肉末蒸豆腐</h3>
+										<div class="f24 pub-greya flex">
+											<span class="ali-c">推荐指数</span>
+											<div class="z-star-level ali-c">
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+											</div>
+										</div>
+										<div class="z-meal-price jus-b">
+											<p class="f3 pub-red ali-c">￥35.00<span class="f24 pub-greya">/份</span></p>
+											<div class="pub-updown flex">
+												<input type="button" class="z-pub-updown-down flex1 z-updown-hs"/>
+												<input type="text" class="pub-updown-num only-number z-updown-hs" value="0"/>
+												<input type="button" class="pub-updown-up flex1"/>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="classify-list" id="MainArea5">
+								<li class="jus-b">
+									<div class="z-meal-goods-img">
+										<img src="images/z-ordermeal-img1.jpg" class="fill-img"/>
+									</div>
+									<div class="z-meal-msg flex1">
+										<h3 class="f28 fb">肉末蒸豆腐5</h3>
+										<div class="f24 pub-greya flex">
+											<span class="ali-c">推荐指数</span>
+											<div class="z-star-level ali-c">
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+											</div>
+										</div>
+										<div class="z-meal-price jus-b">
+											<p class="f3 pub-red ali-c">￥35.00<span class="f24 pub-greya">/份</span></p>
+											<div class="pub-updown flex">
+												<input type="button" class="z-pub-updown-down flex1 z-updown-hs"/>
+												<input type="text" class="pub-updown-num only-number z-updown-hs" value="0"/>
+												<input type="button" class="pub-updown-up flex1"/>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="jus-b">
+									<div class="z-meal-goods-img">
+										<img src="images/z-ordermeal-img1.jpg" class="fill-img"/>
+									</div>
+									<div class="z-meal-msg flex1">
+										<h3 class="f28 fb">肉末蒸豆腐</h3>
+										<div class="f24 pub-greya flex">
+											<span class="ali-c">推荐指数</span>
+											<div class="z-star-level ali-c">
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+											</div>
+										</div>
+										<div class="z-meal-price jus-b">
+											<p class="f3 pub-red ali-c">￥35.00<span class="f24 pub-greya">/份</span></p>
+											<div class="pub-updown flex">
+												<input type="button" class="z-pub-updown-down flex1 z-updown-hs"/>
+												<input type="text" class="pub-updown-num only-number z-updown-hs" value="0"/>
+												<input type="button" class="pub-updown-up flex1"/>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="classify-list" id="MainArea6">
+								<li class="jus-b">
+									<div class="z-meal-goods-img">
+										<img src="images/z-ordermeal-img1.jpg" class="fill-img"/>
+									</div>
+									<div class="z-meal-msg flex1">
+										<h3 class="f28 fb">肉末蒸豆腐6</h3>
+										<div class="f24 pub-greya flex">
+											<span class="ali-c">推荐指数</span>
+											<div class="z-star-level ali-c">
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+											</div>
+										</div>
+										<div class="z-meal-price jus-b">
+											<p class="f3 pub-red ali-c">￥35.00<span class="f24 pub-greya">/份</span></p>
+											<div class="pub-updown flex">
+												<input type="button" class="z-pub-updown-down flex1 z-updown-hs"/>
+												<input type="text" class="pub-updown-num only-number z-updown-hs" value="0"/>
+												<input type="button" class="pub-updown-up flex1"/>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="jus-b">
+									<div class="z-meal-goods-img">
+										<img src="images/z-ordermeal-img1.jpg" class="fill-img"/>
+									</div>
+									<div class="z-meal-msg flex1">
+										<h3 class="f28 fb">肉末蒸豆腐</h3>
+										<div class="f24 pub-greya flex">
+											<span class="ali-c">推荐指数</span>
+											<div class="z-star-level ali-c">
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+											</div>
+										</div>
+										<div class="z-meal-price jus-b">
+											<p class="f3 pub-red ali-c">￥35.00<span class="f24 pub-greya">/份</span></p>
+											<div class="pub-updown flex">
+												<input type="button" class="z-pub-updown-down flex1 z-updown-hs"/>
+												<input type="text" class="pub-updown-num only-number z-updown-hs" value="0"/>
+												<input type="button" class="pub-updown-up flex1"/>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="classify-list" id="MainArea7">
+								<li class="jus-b">
+									<div class="z-meal-goods-img">
+										<img src="images/z-ordermeal-img1.jpg" class="fill-img"/>
+									</div>
+									<div class="z-meal-msg flex1">
+										<h3 class="f28 fb">肉末蒸豆腐7</h3>
+										<div class="f24 pub-greya flex">
+											<span class="ali-c">推荐指数</span>
+											<div class="z-star-level ali-c">
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+											</div>
+										</div>
+										<div class="z-meal-price jus-b">
+											<p class="f3 pub-red ali-c">￥35.00<span class="f24 pub-greya">/份</span></p>
+											<div class="pub-updown flex">
+												<input type="button" class="z-pub-updown-down flex1 z-updown-hs"/>
+												<input type="text" class="pub-updown-num only-number z-updown-hs" value="0"/>
+												<input type="button" class="pub-updown-up flex1"/>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="jus-b">
+									<div class="z-meal-goods-img">
+										<img src="images/z-ordermeal-img1.jpg" class="fill-img"/>
+									</div>
+									<div class="z-meal-msg flex1">
+										<h3 class="f28 fb">肉末蒸豆腐</h3>
+										<div class="f24 pub-greya flex">
+											<span class="ali-c">推荐指数</span>
+											<div class="z-star-level ali-c">
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+											</div>
+										</div>
+										<div class="z-meal-price jus-b">
+											<p class="f3 pub-red ali-c">￥35.00<span class="f24 pub-greya">/份</span></p>
+											<div class="pub-updown flex">
+												<input type="button" class="z-pub-updown-down flex1 z-updown-hs"/>
+												<input type="text" class="pub-updown-num only-number z-updown-hs" value="0"/>
+												<input type="button" class="pub-updown-up flex1"/>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="classify-list" id="MainArea8">
+								<li class="jus-b">
+									<div class="z-meal-goods-img">
+										<img src="images/z-ordermeal-img1.jpg" class="fill-img"/>
+									</div>
+									<div class="z-meal-msg flex1">
+										<h3 class="f28 fb">肉末蒸豆腐8</h3>
+										<div class="f24 pub-greya flex">
+											<span class="ali-c">推荐指数</span>
+											<div class="z-star-level ali-c">
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+											</div>
+										</div>
+										<div class="z-meal-price jus-b">
+											<p class="f3 pub-red ali-c">￥35.00<span class="f24 pub-greya">/份</span></p>
+											<div class="pub-updown flex">
+												<input type="button" class="z-pub-updown-down flex1 z-updown-hs"/>
+												<input type="text" class="pub-updown-num only-number z-updown-hs" value="0"/>
+												<input type="button" class="pub-updown-up flex1"/>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="jus-b">
+									<div class="z-meal-goods-img">
+										<img src="images/z-ordermeal-img1.jpg" class="fill-img"/>
+									</div>
+									<div class="z-meal-msg flex1">
+										<h3 class="f28 fb">肉末蒸豆腐</h3>
+										<div class="f24 pub-greya flex">
+											<span class="ali-c">推荐指数</span>
+											<div class="z-star-level ali-c">
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+												<img src="images/star.png"/>
+											</div>
+										</div>
+										<div class="z-meal-price jus-b">
+											<p class="f3 pub-red ali-c">￥35.00<span class="f24 pub-greya">/份</span></p>
+											<div class="pub-updown flex">
+												<input type="button" class="z-pub-updown-down flex1 z-updown-hs"/>
+												<input type="text" class="pub-updown-num only-number z-updown-hs" value="0"/>
+												<input type="button" class="pub-updown-up flex1"/>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div style="height: 90%;"></div>
+						</div>
+					</section>
+					<!--foot-->
+					<footer class="pub-foot confirm-foot flex f3  z-tour-order-foot">
+						<div class="flex1 ali-c mr2 pl3">
+							<div class="z-menu-cart mr2 on">
+								<span class="z-cartfood-num">2</span>
+							</div>
+							<!--购物车金额-->
+							<div class="z-menu-cart-price">
+								<i class="f28 pub-red">￥148.00</i>
+								<p class="f24 pub-greya">差￥2.79起送</p>
+							</div>
+							<!--不在配送范围内-->
+							<p class="f24 pub-greya hide z-menu-cart-scope">不在配送范围内</p>
+						</div>
+						<a href="rm-delivery-order.html" class="submit-btn flexc">去结算</a>
+					</footer>
+					<!--foot-->
+		
+				</div>
+			</section>
+		</section>
+		
+		
+		
+		<!--购物车弹窗-->
+		<section class="mask-box" id="z-menucart-mask">
+			<section class="box-con">
+				<h3 class="title jus-b ali-c bg-white">
+					<span>已选商品</span>
+					<div class="f24 pub-greya z-clear-cart">清空购物车</div>
+				</h3>
+				<ul class="list z-ordermeal-list">
+					<li class="jus-b ali-c">
+						<p>肉末蒸豆腐 (1份)</p>
+						<i class="f28 pub-red">￥32.00</i>
+						<div class="pub-updown flex">
+							<input type="button" class="z-pub-updown-down flex1"/>
+							<input type="text" class="pub-updown-num only-number" value="1"/>
+							<input type="button" class="pub-updown-up flex1"/>
+						</div>
+					</li>
+					<li class="jus-b ali-c">
+						<p>米粉蒸肉 (1份)</p>
+						<i class="f28 pub-red">￥116.00</i>
+						<div class="pub-updown flex">
+							<input type="button" class="z-pub-updown-down flex1"/>
+							<input type="text" class="pub-updown-num only-number" value="1"/>
+							<input type="button" class="pub-updown-up flex1"/>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</section>
+		<!--分享弹窗-->
+		<section class="mask-box" id="z-share-box">
+			<section class="box-con">
+				<ul class="list pub-bg flex-wrap">
+					<li>
+						<a href="">
+							<div class="z-share-icon"><img src="images/wechat.png" class="fill-img"/></div>
+							<p>微信好友</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="z-share-icon"><img src="images/pengyouquan.png" class="fill-img"/></div>
+							<p>朋友圈</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="z-share-icon"><img src="images/qq.png" class="fill-img"/></div>
+							<p>QQ好友</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="z-share-icon"><img src="images/kongjian.png" class="fill-img"/></div>
+							<p>QQ空间</p>
+						</a>
+					</li>
+				</ul>
+				<div class="make-sure flexc">取消</div>
+			</section>
+		</section>
+		<!--包厢预定弹窗-->
+		<section class="mask-box hide" id="z-privateroom-mask">
+			<div class="z-cell-box">
+				<div class="z-mask-con pub-padding3">
+					<h3 class="pub-padding3 z-mealclass-tit">1号大包厢预定</h3>
+					<div class="jus-a">
+						<a href="rm-spot-order.html" class="z-line-btn z-line-btn-red">现场点菜</a>
+						<a href="rm-internet-order.html" class="z-line-btn">网上点菜</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--jQuery-->
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<!--layui.js-->
+		<script src="libs/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/swiper3.14/js/swiper.min.js"></script>
+		<script src="libs/date.js"></script>
+		<!--公共js-->
+		<script src="js/main.js"></script>
+		<!--当前页js-->
+		<script src="js/list/reserve-meal-detail.js"></script>
+	</body>
+</html>

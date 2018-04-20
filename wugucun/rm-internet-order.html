@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title></title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
+		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
+		
+		<link rel="stylesheet" type="text/css" href="css/z-main.css"/>
+		<!--日期选择器-->
+	    <link href="libs/date/css/mobiscroll_002.css" rel="stylesheet" type="text/css">
+	    <link href="libs/date/css/mobiscroll.css" rel="stylesheet" type="text/css">
+	    <link href="libs/date/css/mobiscroll_003.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="pub-bg">
+		<!--头部s-->
+		<header class="pub-head flexc z-tour-order-head">
+			<div class="z-order-goback"></div>
+			<div class="head-title f32">填写订单</div> 
+			<a href="reserve-notice.html" class="head-r flexc f26 head-edit pub-green">预订须知</a>
+		</header>
+		<div class="seat-top"></div>
+		<!--头部e-->
+		<!--村游订单s-->
+		<section class="z-rm-internet-order">
+			<div class="z-rm-spotorder-msg">
+				<p class="f32"><span>1号包厢</span>可容纳15人左右</p>
+				<p class="f24 mt2"><span>安静</span><span>舒适</span><span>环境好</span></p>
+			</div>
+			<ul class="mine-list f28 z-mt0">
+				<li>
+					<a href="javascript:;" class="ali-c">
+						<div class="mine-name">预订人姓名</div>
+						<input type="text" placeholder="请填写预订人姓名" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="ali-c">
+						<div class="mine-name">手机号</div>
+						<input type="text" placeholder="请填写预定手机号" class="z_reserve_phone"/>
+					</a>
+				</li>
+			</ul>
+			<ul class="mine-list f28">
+				<li>
+					<a href="#" class="ali-c z-reserve-date-btn">
+						<div class="mine-name">预订日期</div>
+						<input name="appDate" id="appDate"  type="text" value="" placeholder="请选择预定日期">
+						<!--<input type="text" placeholder="请选择预定日期" class="z-reserve-date"/>-->
+						<div class="pub-right flex1"></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="ali-c">
+						<div class="mine-name">预定时间段</div>
+						<div class="flex1 ali-c">
+							<span class="z-rm-checkbox on">
+								<input type="checkbox checked"/>
+							</span>上午
+							<span class="z-rm-checkbox">
+								<input type="checkbox"/>
+							</span>中午
+							<span class="z-rm-checkbox">
+								<input type="checkbox"/>
+							</span>晚上
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="ali-c">
+						<div class="mine-name">就餐人数</div>
+						<input type="text" placeholder="请填写就餐人数" />
+					</a>
+				</li>
+			</ul>
+			<!--包厢订单显示-->
+			<ul class="mine-list f28">
+				<li>
+					<a href="javascript:;" class="ali-c">
+						<div class="mine-name flex1">包厢费用</div>
+						<div class="flex1 tr">￥200.00</div>
+					</a>
+				</li>
+			</ul>
+			<!--散座订单显示-->
+			<ul class="mine-list f28">
+				<li>
+					<a href="javascript:;" class="ali-c">
+						<div class="mine-name flex1">散座费用</div>
+						<div class="flex1 tr">￥200.00</div>
+					</a>
+				</li>
+			</ul>
+			<!--商品费用-->
+			<ul class="mine-list f28">
+				<li>
+					<a href="javascript:;" class="ali-c z-commodity-cost">
+						<div class="mine-name flex1">商品费用</div>
+						<div class="flex1 tr">￥0.00</div>
+						<i class="next-turn"></i>
+					</a>
+					<ul class="z-cost-dropdown hide">
+						<li class="jus-b">
+							<p>肉末蒸豆腐<span>x1</span></p>
+							<p>￥35.00</p>
+						</li>
+						<li class="jus-b">
+							<p>黑椒小土豆<span>x1</span></p>
+							<p>￥35.00</p>
+						</li>
+						<li class="jus-b">
+							<p>米粉蒸肉<span>x2</span></p>
+							<p>￥35.00</p>
+						</li>
+						<li class="jus-b">
+							<p>鲜芒辣味虾<span>x1</span></p>
+							<p>￥35.00</p>
+						</li>
+						<li class="jus-b">
+							<p>辣子鸡丁<span>x1</span></p>
+							<p>￥35.00</p>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<!--选择优惠券-->
+			<ul class="mine-list f28 z-choose-coupon">
+				<li>
+					<a href="h-coupon.html" class="ali-c">
+						<div class="mine-name flex1">优惠券</div>
+						<div class="pub-right">暂无可用</div>
+						<!--有可用优惠券时选择后显示-->
+						<div class="pub-right hide"><span class="pub-red">全场满1000减100</span></div>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<!--村游订单e-->
+		
+		<!--foot-->
+		<div class="seat-bottom"></div>
+		<footer class="pub-foot confirm-foot flex f3 z-rm-interorder-foot">
+			<div class="flex1 ali-c mr2 pl3">
+				<span class="f24">应付金额：<i class="f36 pub-red">￥200.00</i></span>
+			</div>
+			<a href="rm-order-meal.html" class="submit-btn flexc z-rm-ordermeal">去点菜</a>
+			<a href="z-orderpay-mode-meal.html" class="submit-btn flexc z-rm-interorder-pay">去支付</a>
+		</footer>
+		<!--foot-->
+		
+		
+		<!--jQuery-->
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<!--layui.js-->
+		<script src="libs/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<!--日期选择器js-->
+		<!--<script src="libs/datePicker.js"></script>-->
+	    <script src="libs/date/js/mobiscroll_002.js" type="text/javascript"></script>
+	    <script src="libs/date/js/mobiscroll_004.js" type="text/javascript"></script>
+	    <script src="libs/date/js/mobiscroll.js" type="text/javascript"></script>
+	    <script src="libs/date/js/mobiscroll_003.js" type="text/javascript"></script>
+	    <script src="libs/date/js/mobiscroll_005.js" type="text/javascript"></script>
+	    <script src="libs/date/js/data.js" type="text/javascript"></script>
+		<!--公共js-->
+		<script src="js/main.js"></script>
+		<!--当前页js-->
+		<script src="js/list/rm-internet-order.js"></script>
+	</body>
+</html>

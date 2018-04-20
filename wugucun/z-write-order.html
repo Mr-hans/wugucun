@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title></title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
+		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
+		
+		<link rel="stylesheet" type="text/css" href="css/z-main.css"/>
+	</head>
+	<body class="pub-bg"> 
+		<!--head-->
+		<header class="pub-head flexc">
+			<div class="go-back"></div>
+			<div class="head-title f32">填写订单</div>
+		</header>
+		<div class="seat-top"></div>
+		<!--head-->
+		
+		<!--main content-->
+		<main class="pub-scroll">
+			<header>
+				<!--没有收货地址时显示的内容-->
+				<div class="z-write-address">
+					<a href="h-add-address.html">
+						<div class="z-write-add-address flexc">
+							<span class="pub-greyb f32">添加收货地址</span>
+						</div>
+					</a>
+				</div>	
+				<!--有收货地址时显示的内容-->
+				<div class="z-write-address">
+					<a href="h-shipping-address1.html" class="flex">
+						<div class="z-write-people flex1 f32">顾南衣<div class="z-default-label mt2">默认</div></div>
+						<div class="pub-right">
+							<div class="z-write-phone">15179138785</div>
+							<div class="z-write-addr">江西省 南昌市 青云谱区 徐家坊街道 东 方明珠铂金特区B(自助柜)</div>
+						</div>
+					</a>
+				</div>
+			</header>
+			
+			<!--商品信息-->
+			<section class="z-write-order-goods">
+				<!--已买商品列表-->
+				<ul class="shopcart-goods bg-white mt2">
+					<li class="flex">
+						<div class="goods-img mr2">
+							<a href="goods-detail.html">
+								<img src="images/cart-goods-img1.jpg" alt="" class="fill-img"/>
+							</a>
+						</div>
+						<div class="flex1">
+							<div class="goods-name">
+								<a href="goods-detail.html">
+									<h3 class="twoline">纯手工自酿白酒 五谷村丛林酒博园 小白酒 52度 单瓶装500ml</h3>
+								</a>	
+							</div>
+							<div>
+								<div>
+									<p class="f24 pub-greyb">规格：瓶</p>
+									
+								</div>
+								<div class="jus-b">
+									<p class="f28 pub-red mt18">￥699.00</p>
+									<div class="z-ordergoods-num mt18 f24">x2</div>
+								</div>
+								
+							</div>
+						</div>
+					</li>
+					<li class="flex">
+						<div class="goods-img mr2">
+							<a href="goods-detail.html">
+								<img src="images/cart-goods-img1.jpg" alt="" class="fill-img"/>
+							</a>
+						</div>
+						<div class="flex1">
+							<div class="goods-name">
+								<a href="goods-detail.html">
+									<h3 class="twoline">纯手工自酿白酒 五谷村丛林酒博园 小白酒 52度 单瓶装500ml</h3>
+								</a>	
+							</div>
+							<div>
+								<div>
+									<p class="f24 pub-greyb">规格：瓶</p>
+									
+								</div>
+								<div class="jus-b">
+									<p class="f28 pub-red mt18">￥699.00</p>
+									<div class="z-ordergoods-num mt18 f24">x2</div>
+								</div>
+								
+							</div>
+						</div>
+					</li>
+					<li class="flex">
+						<div class="goods-img mr2">
+							<a href="goods-detail.html">
+								<img src="images/cart-goods-img1.jpg" alt="" class="fill-img"/>
+							</a>
+						</div>
+						<div class="flex1">
+							<div class="goods-name">
+								<a href="goods-detail.html">
+									<h3 class="twoline">纯手工自酿白酒 五谷村丛林酒博园 小白酒 52度 单瓶装500ml</h3>
+								</a>	
+							</div>
+							<div>
+								<div>
+									<p class="f24 pub-greyb">规格：瓶</p>
+									
+								</div>
+								<div class="jus-b">
+									<p class="f28 pub-red mt18">￥699.00</p>
+									<div class="z-ordergoods-num mt18 f24">x2</div>
+								</div>
+								
+							</div>
+						</div>
+					</li>
+				</ul>
+				
+				<!--选择优惠券-->
+				<ul class="mine-list f28 z-choose-coupon">
+					<li>
+						<a href="h-coupon.html" class="ali-c">
+							<div class="mine-name flex1">优惠券</div>
+							<div class="pub-right">暂无可用</div>
+							<!--有可用优惠券时选择后显示-->
+							<div class="pub-right hide"><span class="pub-red">全场满1000减100</span></div>
+						</a>
+					</li>
+				</ul>
+				<!--商品合计-->
+				<ul class="mine-list f28">
+					<li>
+						<a href="javascript:;" class="ali-c">
+							<div class="mine-name flex1">商品合计</div>
+							<div class="flex1 tr">￥1703.00</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="ali-c">
+							<div class="mine-name flex1">运费</div>
+							<div class="flex1 tr">￥0.00</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="ali-c">
+							<div class="mine-name flex1">优惠券</div>
+							<div class="flex1 tr">-￥100.00</div>
+						</a>
+					</li>
+				</ul>
+				
+				<!--买家留言-->
+				<ul class="mine-list f28">
+					<li>
+						<a href="javascript:;" class="ali-c z-buyer-message">
+							<div class="mine-name">买家留言:</div>
+							<input type="text" placeholder="选填：填写内容已和商家协商确认" class="flex1"/>
+						</a>
+					</li>
+				</ul>
+				<!--服务协议-->
+				<div class="z-service-agreement-choose f24 ali-c pub-padding3 pub-greyb">
+					<span class="public-checkbox mr2 shopcart-check-single">
+						<input type="checkbox"/>
+					</span>
+					已阅读并同意<a href="service-agreement.html" class="pub-red ">《五谷村服务协议》</a>
+				</div>
+				
+				
+			</section>
+		</main>
+		<!--main content-->
+		
+		<!--foot-->
+		<footer class="pub-foot confirm-foot flex f3">
+			<div class="flex1 ali-c mr2 pl3">
+				<span>应付金额：<i class="pub-red">￥704.00</i></span>
+			</div>
+			<a href="z-orderpay-mode.html" class="submit-btn flexc" id="write-order-sub">去付款</a>
+		</footer>
+		<!--foot-->
+
+		
+		<!--jq-->
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+		<!--layui.js-->
+		<script src="libs/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<!--公共js-->
+		<script type="text/javascript" src="js/main.js"></script>
+		<!--当前页.js-->
+		<script type="text/javascript" src="js/list/z-write-order.js"></script>
+
+	</body>
+</html>

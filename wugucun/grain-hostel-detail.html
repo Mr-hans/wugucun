@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title></title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
+		<link rel="stylesheet" type="text/css" href="libs/swiper3.14/css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/calendar.css"/>
+		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
+		
+		<link rel="stylesheet" type="text/css" href="css/z-main.css"/>
+	</head>
+	<body class="pub-bg">
+		<!--头部s-->
+		<header class="pub-head z-goods-detail-head flexc z-transition2 z-hostel-head">
+			<div class="go-back"></div>
+			<div class="head-title f32 hide">民宿详情</div> 
+			<!--右边分享-->
+			<a href="javascript:;" class="head-r flexc head-edit head-share"></a>
+			<!--右边收藏-->
+			<a href="javascript:;" class="head-r flexc head-edit head-collection"></a>
+		</header>
+		<!--头部e-->
+		<!--轮播s-->
+		<section class="z-hostel-detail-banner swiper-container">
+			<div class="swiper-wrapper">
+			    <div class="swiper-slide">
+			    	<a href=""><img src="images/hostel-detail-img1.jpg" alt="" /></a>
+			    </div>
+			    <div class="swiper-slide">
+			    	<a href=""><img src="images/hostel-detail-img1.jpg" alt="" /></a>
+			    </div>
+			    <div class="swiper-slide">
+			    	<a href=""><img src="images/hostel-detail-img1.jpg" alt="" /></a>
+			    </div>
+			    <div class="swiper-slide">
+			    	<a href=""><img src="images/hostel-detail-img1.jpg" alt="" /></a>
+			    </div>
+			    <div class="swiper-slide">
+			    	<a href=""><img src="images/hostel-detail-img1.jpg" alt="" /></a>
+			    </div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</section>
+		<!--轮播e-->
+		<div class="bg-white">
+			<p class="twoline f48 z-hostel-title">慢生活日式阁楼 双空调 提供送机 近地铁2号线 万达广场站 </p>
+			<ul class="jus-a z-hostel-service pub-padding3">
+				<li class="flex1">
+					<div class="z_nav_ico"></div>
+					<p>最多住4人</p>
+				</li>
+				<li class="flex1">
+					<div class="z_nav_ico"></div>
+					<p>1间卧室</p>
+				</li>
+				<li class="flex1">
+					<div class="z_nav_ico"></div>
+					<p>2张床</p>
+				</li>
+				<li class="flex1">
+					<div class="z_nav_ico"></div>
+					<p>独立卫浴</p>
+				</li>
+			</ul>
+		</div>
+		<!--入住时间-->
+		<ul class="mine-list">
+			<li id="checkinout">
+				<a href="javascript:;" class="ali-c" id="firstSelect">
+					<div class="mine-name ali-c f20 pub-greya">
+						<span>入住 &nbsp;</span>
+						<!--<span class="f28 pub-black">2月22日</span>-->
+						<input class="f28 pub-black" id="startDate" type="text" value=""style="" readonly>
+					</div>
+					<div class="flex1 ali-c f20 pub-greya">
+						<span>离店&nbsp;</span>
+						<!--<span class="f28 pub-black">2月24日</span>-->
+						<input class="f28 pub-black" id="endDate" type="text" value="" style="" readonly>
+					</div>
+					<div class="pub-right f28 pub-black span21">共<span class="NumDate">1</span>晚</div>
+				</a>
+			</li>
+		</ul>
+		<!--便利设施-->
+		<section class="bg-white mt2">
+			<div class="bg-white pub-padding3">
+				<h3 class="f32">便利设施</h3>
+				<ul class="z-facilities flex-wrap">
+					<li><img src="images/wifi.png"/>WIFI</li>
+					<li><img src="images/park.png"/>停车场</li>
+					<li><img src="images/swimmingpool.png"/>游泳池</li>
+					<li><img src="images/repast.png"/>餐饮</li>
+					<li><img src="images/businesscenter.png"/>商务中心</li>
+					<li><img src="images/hotspring.png"/>温泉</li>
+				</ul>
+			</div>
+			<div id="map">
+			    <div style="width: 100%; height: 5.4rem;" id="allmap"></div>
+			</div>	
+			<ul class="mine-list f32">
+ 				<li>
+					<a href="javascript:;" class="ali-c">
+						<div class="mine-name flex1">入住时间</div>
+						<div class="flex1 tr pub-greya">15:00后</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="ali-c">
+						<div class="mine-name flex1">退房时间</div>
+						<div class="flex1 tr pub-greya">13:00</div>
+					</a>
+				</li>
+			</ul>
+		</section>
+		
+		<!--评价-->
+		<section class="z-evaluate-wrap bg-white mt2">
+			<div class="bg-white pub-padding3">
+				<h3 class="f32">评价(128条)</h3>
+			</div>
+			<div class="z-user-evaluate">
+				<ul class="comment-list">
+					<li>
+						<a href="grain-hostel-evaluate.html">
+							<div class="jus-b">
+								<div class="ali-c">
+									<div class="head-box">
+										<img src="images/head-img.png" alt="" class="fill-img"/>
+									</div>
+									<div>
+										<p class="f32">番***茄</p>
+										<time class="z-view-evaluate-time pub-greya">2018-01-24</time>
+									</div>
+								</div>
+								<div class="z-star-level ali-c">
+									<img src="images/star.png"/>
+									<img src="images/star.png"/>
+									<img src="images/star.png"/>
+									<img src="images/star.png"/>
+									<img src="images/star.png"/>
+								</div>	
+							</div>
+							<div class="comment-font mt2">
+								<p>二层包装完好无损，内包装 高端大气上档次，开箱藕 酒水无遗漏现象，酒瓶古朴端庄大气，很精美。静放十多天后昨日试喝，本人贵州的，</p>
+							</div>
+							<div class="flex-wrap comment-imgs">
+								<div class="img-item"><img src="images/evaluate-img1.jpg" alt="" /></div>
+								<div class="img-item"><img src="images/evaluate-img2.jpg" alt="" /></div>
+								<div class="img-item"><img src="images/evaluate-img3.jpg" alt="" /></div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="jus-c">
+				<a href="grain-hostel-evaluate.html" class="z-alleval-btn">查看全部评价</a>
+			</div>
+		</section>
+		
+			
+		<!--返回顶部-->
+		<section class="back-totop"></section>
+		<!--foot-->
+		<div class="seat-bottom"></div>
+		<footer class="pub-foot confirm-foot flex f3 z-tour-order-foot">
+			<div class="flex1 ali-c mr2 pl3 jus-b">
+				<span class="pub-greya">电话咨询：<i class="pub-green">13670043921</i></span>
+			</div>
+			<a href="grain-hostel-order.html" class="submit-btn flexc" id="write-order-sub">预定</a>
+		</footer>
+		<!--foot-->
+		<!--分享弹窗-->
+		<section class="mask-box" id="z-share-box">
+			<section class="box-con">
+				<ul class="list pub-bg flex-wrap">
+					<li>
+						<a href="">
+							<div class="z-share-icon"><img src="images/wechat.png" class="fill-img"/></div>
+							<p>微信好友</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="z-share-icon"><img src="images/pengyouquan.png" class="fill-img"/></div>
+							<p>朋友圈</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="z-share-icon"><img src="images/qq.png" class="fill-img"/></div>
+							<p>QQ好友</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="z-share-icon"><img src="images/kongjian.png" class="fill-img"/></div>
+							<p>QQ空间</p>
+						</a>
+					</li>
+				</ul>
+				<div class="make-sure flexc">取消</div>
+			</section>
+		</section>
+		<!--入住时间弹窗-->
+		<div class="mask_calendar">
+			<div class="calendar"></div>
+			<!-- 提示 -->
+			<div class="calendar_tishi">请选择离店日期...</div>
+		</div>
+		<!--jQuery-->
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<!--layui.js-->
+		<script src="libs/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/swiper3.14/js/swiper.min.js"></script>
+		<script src="libs/date.js"></script>
+		<!--公共js-->
+		<script src="js/main.js"></script>
+		<!--当前页js-->
+		<script src="js/list/grain-hostel-detail.js"></script>
+		<!--百度地图-->
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=67jMQ5DmYTe1TLMBKFUTcZAR"></script>
+		<script type="text/javascript">
+		    $(function () {
+		        ShowMap('115.937786,28.622409', '南昌嘉瑞', '景泰华产业园', '021-888888888', '021-888888888', '20');
+		    })
+		    function getInfo(id) {
+		        $.ajax({
+		            type: "POST",
+		            url: "WebUserControl/Contact/GetInfo.ashx",
+		            cache: false,
+		            async: false,
+		            data: { ID: id },
+		            success: function (data) {
+		                data = eval(data);
+		                var length = data.length;
+		                if (length > 0) {
+		                    ShowMap(data[0]["Image"], data[0]["NewsTitle"], data[0]["Address"], data[0]["Phone"], data[0]["NewsTags"], data[0]["NewsNum"]);
+		                }
+		            }
+		        });
+		    }
+		    function ShowMap(zuobiao, name, addrsee, phone, chuanzhen, zoom) {
+		        var arrzuobiao = zuobiao.split(',');
+		        var map = new BMap.Map("allmap");
+		        map.centerAndZoom(new BMap.Point(arrzuobiao[0], arrzuobiao[1]), zoom);
+		        map.addControl(new BMap.NavigationControl());
+		        var marker = new BMap.Marker(new BMap.Point(arrzuobiao[0], arrzuobiao[1]));
+		        map.addOverlay(marker);
+		        var infoWindow = new BMap.InfoWindow('<p style="color: #bf0008;font-size:14px;">' + name + '</p><p>地址：' + addrsee + '</p><p>电话：' + phone + '</p><p>传真：' + chuanzhen + '</p>');
+		        marker.addEventListener("click", function () {
+		            this.openInfoWindow(infoWindow);
+		        });
+		        marker.openInfoWindow(infoWindow);
+		    }
+		</script>
+	</body>
+</html>

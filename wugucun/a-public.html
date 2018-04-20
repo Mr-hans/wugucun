@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>个人中心</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
+		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
+		<link rel="stylesheet" href="css/h-main.css" />
+	</head>
+<body>
+	<!--head-->
+		<header class="pub-head public-head flexc border-no">
+			<div class="go-back"></div>
+			<div class="head-title f32">退款详情</div> 
+		</header>
+		<div class="seat-top"></div>
+	<!--head-->
+	<!-- 订单状态 -->
+
+		<section class="pub-jbs pub-jbs-two"> <!--如果只有h2一个标签,只需删除'pub-jbs-two'这个类即可-->
+			<h2>退款成功</h2>
+			<p>2018年2月8日 15:48</p>
+		</section>
+	<!-- 订单状态 -->	
+	
+	<!-- 产品列表 -->
+	<section class="myorder-center">
+			<ul class="myorder-box mt2">
+				<li>
+					<div class="myorder-wrap pub-li-28 bg-white">
+						<a href="#" class="flex">
+							<div class="myorder-img">
+								<img src="images/pro-img1.jpg" alt="" />
+							</div>
+							<div class="myorder-text flex1 pos-re">
+								<h3 class="twoline">五谷原味2号店</h3>
+								<span class="oneline">1号大包厢 可容纳15-20人</span>
+								<span class="oneline">网上点菜</span>
+								<em class="f28">￥836.00</em>
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+	</section>
+	<!-- 产品列表 -->
+
+	<!-- 优惠劵 -->
+		<section class="coupon-center pub-li-28">
+			<ul class="list">
+			<!-- 未使用优惠劵 -->
+				<li class="coupon-on">
+					<div class="f-value flex">
+						<div class="f-va-one f-vac">
+							<h3><b>5</b>元</h3>
+						</div>
+						<div class="f-va-two f-vac">
+							<p>特色景点满减门票</p>
+							<span>2018.02.13-03.02</span>
+						</div>
+						<div class="f-va-three f-vac">
+							<a href="#" class="use-go">使用</a>
+						</div>
+					</div>
+					<div class="coupon-text">
+						<i class="next-turn"></i>
+						<p>1、领取此券后，前往指定特色景点购买门票</p>
+						<p>2、一个手机号只能领取一张卡券，不可与其他优惠叠加使用</p>
+						<p>3、一张优惠券只能使用一次，卡券不可转增</p>
+					</div>
+				</li>
+			<!-- 未使用优惠劵 -->
+
+			<!-- 已失效优惠劵 -->
+				<li class="coupon-on off">
+					<div class="f-value flex">
+						<div class="f-va-one f-vac">
+							<h3><b>5</b>元</h3>
+							<p>仅限新用户使用</p>
+						</div>
+						<div class="f-va-two f-vac">
+							<p>特色景点满300减20</p>
+							<span>2018.02.13-03.02</span>
+						</div>
+						<div class="f-va-three f-vac">
+							<a href="#" class="use-go use-off">已失效</a>
+						</div>
+					</div>
+					<div class="coupon-text">
+						<i class="next-turn"></i>
+						<p>1、领取此券后，前往指定特色景点购买门票</p>
+						<p>2、一个手机号只能领取一张卡券，不可与其他优惠叠加使用</p>
+						<p>3、一张优惠券只能使用一次，卡券不可转增</p>
+					</div>
+				</li>
+			<!-- 已失效优惠劵 -->
+			</ul>
+		</section>
+
+		<!-- 双tab边框占一半选项卡 -->
+		<section class="detail-and-comment">
+			<div class="title flex">
+				<div class="flex1 flexc on">图文详情</div>
+				<div class="flex1 flexc">商品评价</div>
+				<div class="under-line"></div>
+			</div>
+			<section class="con-box">
+				<!--图文详情-->
+				<div class="item con-box-detail">
+					图文详情
+				</div>
+				<!--商品评价-->
+				<div class="item con-box-comment hide">
+					商品评价
+				</div>
+			</section>
+		</section>
+
+
+		<!-- 三tab选项卡 -->  <!--这里的tab可以增加删减,如增加样式有搜改变可以微调一下-->
+			<section class="detail-and-comment mt18">
+				<div class="title flex">
+					<div class="flex1 flexc on"><span class="border-tp">未使用(2)</span></div>
+					<div class="flex1 flexc"><span class="border-tp">已使用(3)</span></div>
+					<div class="flex1 flexc"><span class="border-tp">已过期(5)</span></div>
+				</div>
+				<section class="con-box">
+					<!--未使用-->
+					<div class="item con-box-detail">
+						未使用tab页面
+					</div>
+					<!--已使用-->
+					<div class="item con-box-comment hide">
+						已使用tab页面
+					</div>
+					<!--已过期-->
+					<div class="item con-box-comment hide">
+						已过期tab页面
+					</div>
+				</section>
+			</section>
+
+		<!--jq-->
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+		<!--layui.js-->
+		<script src="libs/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 公共js -->
+		<script src="js/public.js" type="text/javascript"></script>
+
+</body>
+</html>

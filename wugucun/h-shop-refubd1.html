@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>申请退款</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
+		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
+		<link rel="stylesheet" href="css/h-main.css" />
+		
+	</head>
+	<body class="pub-bg"> 
+		<!--head-->
+		<header class="pub-head  flexc">
+			<div class="go-back"></div>
+			<div class="head-title f32">申请退款</div> 
+		</header>
+		<div class="seat-top"></div>
+		<!--head-->
+		
+		
+		<!--main content-->
+		<section class="logistics">
+			<!--商品信息-->
+			<div class="logistics-title flex">
+				<div class="img-box">
+					<img src="images/going_pro_03.jpg" alt="" class="fill-img"/>
+					<div class="view-po pub-white f2 tc">2件商品</div>
+				</div>
+				<div class="flex1 mr2">
+					<p>纯手工自酿白酒 五谷村丛林酒博园小白酒 52度 单瓶装500ml</p>
+				</div>
+			</div>
+			<form action="">
+				<!--申请退款-->
+				<ul class="mine-list f3 mt18">
+					<li>
+						<a href="#" class="ali-c sotg-btn">
+							<div class="mine-name flex1">货物状态</div>
+							<div class="pub-right pub-greya sotg-txt">请选择</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="ali-c arr-btn">
+							<div class="mine-name flex1">退款原因</div>
+							<div class="pub-right pub-greya err-txt">请选择</div>
+						</a>
+					</li>
+					
+				</ul>
+				<!-- 退款金额 -->
+				<ul class="mine-list f3 mt18 pub-bg">
+					<li class="ali-c pd-28 bg-white mt18 refud-m f28">退款金额: <i class="pub-red">￥895.00</i></li>
+					<li class="ali-c pd-28 refud-m f28 pub-bg">最多￥895.00，含发货邮费￥0.00</li>
+					<li class="bg-white">
+						<a href="javascript:;" class="ali-c">
+							<div class="mine-name">退款说明</div>
+							<input type="text" placeholder="选填" />
+						</a>
+					</li>
+				</ul>
+				<!-- 上传凭证 -->
+				<div class="service-apply bg-white pd-28 mt18">
+					<div class="service-apply-area ali-c refud-m f28">上传凭证</div>
+					<div class="service-photos flex-wrap">
+						<!--上传的图片列表-->
+
+						
+						<!--上传按钮-->
+						<div class="item service-upload-btn" id="service-upload-btn">
+							<img src="images/service-btn_03.png" alt="" />
+						</div>
+					</div>
+				</div>
+				<a href="h-shop-refubd-pro1.html" class="pub-foot tc f32 pub-white inut">提交</a>
+			</form>
+		</section>
+
+
+		<!--下方弹出-窗口  货物状态-->
+		<section class="mask-box" id="sotg-box">
+			<section class="box-con">
+				<h3 class="title flexc border-no mt18">货物状态</h3>
+				<ul class="list list-green pd-28 mine-list f28">
+					<li>
+						<a href="" class="ali-c">
+							<div class="mine-name flex1">未收到货</div>
+							<input type="radio" name="1" value="未收到货">
+						</a>
+					</li>
+					<li>
+						<a href="" class="ali-c">
+							<div class="mine-name flex1">已收到货</div>
+							<input type="radio" name="1" value="已收到货">
+						</a>
+					</li>
+				</ul>
+				<div class="make-sure flexc bg-green">关闭</div>
+			</section>
+		</section>
+		<!--下方弹出-窗口 退款原因(未收到货)-->
+		<section class="mask-box" id="arr-box">
+			<section class="box-con">
+				<h3 class="title flexc border-no mt18">退款原因</h3>
+				<ul class="list list-green pd-28 mine-list f28">
+					<li>
+						<a href="" class="ali-c">
+							<div class="mine-name flex1">不喜欢/不想要</div>
+							<input type="radio" name="1" value="不喜欢/不想要">
+						</a>
+					</li>
+					<li>
+						<a href="" class="ali-c">
+							<div class="mine-name flex1">空包裹</div>
+							<input type="radio" name="1" value="空包裹">
+						</a>
+					</li>
+					<li>
+						<a href="" class="ali-c">
+							<div class="mine-name flex1">未按约定时间发货</div>
+							<input type="radio" name="1" value="未按约定时间发货">
+						</a>
+					</li>
+					<li>
+						<a href="" class="ali-c">
+							<div class="mine-name flex1">未按约定时间发货</div>
+							<input type="radio" name="1" value="未按约定时间发货">
+						</a>
+					</li>
+					<li>
+						<a href="" class="ali-c">
+							<div class="mine-name flex1">快递/物流一直未送到</div>
+							<input type="radio" name="1" value="快递/物流一直未送到">
+						</a>
+					</li>
+				</ul>
+				<div class="make-sure flexc bg-green">关闭</div>
+			</section>
+
+			<!--下方弹出-窗口 退款原因(已收到货)-->
+		<section class="mask-box" id="arr-box-go">
+			<section class="box-con">
+				<h3 class="title flexc border-no mt18">退款原因</h3>
+				<ul class="list list-green pd-28 mine-list f28">
+					<li>
+						<a href="" class="ali-c">
+							<div class="mine-name flex1">大小/尺寸与商品描述不符</div>
+							<input type="radio" name="1" value="大小/尺寸与商品描述不符">
+						</a>
+					</li>
+					<li>
+						<a href="" class="ali-c">
+							<div class="mine-name flex1">生产日期/保质期与商品描述不符</div>
+							<input type="radio" name="1" value="大小/尺寸与商品描述不符">
+						</a>
+					</li>
+					<li>
+						<a href="" class="ali-c">
+							<div class="mine-name flex1">包装/商品损坏/污渍/裂痕/变形</div>
+							<input type="radio" name="1" value="包装/商品损坏/污渍/裂痕/变形">
+						</a>
+					</li>
+					<li>
+						<a href="" class="ali-c">
+							<div class="mine-name flex1">包装/商品损坏/污渍/裂痕/变形</div>
+							<input type="radio" name="1" value="包装/商品损坏/污渍/裂痕/变形">
+						</a>
+					</li>
+					<li>
+						<a href="" class="ali-c">
+							<div class="mine-name flex1">快递/物流一直未送到</div>
+							<input type="radio" name="1" value="快递/物流一直未送到">
+						</a>
+					</li>
+				</ul>
+				<div class="make-sure flexc bg-green">关闭</div>
+			</section>
+		</section>
+		<!--jq-->
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+		<!--layui.js-->
+		<script src="libs/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<!--公共js-->
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/list/refubd.js"></script>
+	</body>
+</html>

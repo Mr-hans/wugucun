@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title></title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
+		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
+		
+		<link rel="stylesheet" type="text/css" href="css/z-main.css"/>
+		
+	</head>
+	<body>
+		<!--头部s-->
+		<header class="pub-head  flexc">
+			<div class="go-back"></div>
+			<div class="head-title f32">领券中心</div> 
+		</header>
+		<div class="seat-top"></div>
+		<!--头部e-->
+		<!-- 优惠劵 -->
+		<section class="coupon-center pub-li-28">
+			<ul class="list">
+			<!-- 未使用优惠劵 -->
+				<li class="coupon-on">
+					<div class="f-value flex">
+						<div class="f-va-one f-vac">
+							<h3><b>100</b>元</h3>
+							<p>限酒类商品使用</p>
+						</div>
+						<div class="f-va-two f-vac">
+							<p>新用户满减</p>
+							<span>2018.02.13-03.02</span>
+						</div>
+						<div class="f-va-three f-vac">
+							<a href="#" class="use-go">领取</a>
+						</div>
+					</div>
+					<div class="coupon-text">
+						<i class="next-turn"></i>
+						<p>1、领取此券后，前往指定商品店铺购买指定商品</p>
+						<p>2、一个手机号只能领取一张卡券，不可与其他优惠叠加使用</p>
+						<p>3、一张优惠券只能使用一次，卡券不可转增</p>
+					</div>
+				</li>
+				<li class="coupon-on">
+					<div class="f-value flex">
+						<div class="f-va-one f-vac">
+							<h3><b>5</b>元</h3>
+						</div>
+						<div class="f-va-two f-vac">
+							<p>特色景点满减门票</p>
+							<span>2018.02.13-03.02</span>
+						</div>
+						<div class="f-va-three f-vac">
+							<a href="#" class="use-go">领取</a>
+						</div>
+					</div>
+					<div class="coupon-text">
+						<i class="next-turn"></i>
+						<p>1、领取此券后，前往指定特色景点购买门票</p>
+						<p>2、一个手机号只能领取一张卡券，不可与其他优惠叠加使用</p>
+						<p>3、一张优惠券只能使用一次，卡券不可转增</p>
+					</div>
+				</li>
+				<!--券已领完点击领取触发的弹窗-->
+				<li class="coupon-on over">
+					<div class="f-value flex">
+						<div class="f-va-one f-vac">
+							<h3><b>100</b>元</h3>
+							<p>限酒类商品使用</p>
+						</div>
+						<div class="f-va-two f-vac">
+							<p>新用户满减</p>
+							<span>2018.02.13-03.02</span>
+						</div>
+						<div class="f-va-three f-vac">
+							<a href="#" class="use-go">领取</a>
+						</div>
+					</div>
+					<div class="coupon-text">
+						<i class="next-turn"></i>
+						<p>1、领取此券后，前往指定商品店铺购买指定商品</p>
+						<p>2、一个手机号只能领取一张卡券，不可与其他优惠叠加使用</p>
+						<p>3、一张优惠券只能使用一次，卡券不可转增</p>
+					</div>
+				</li>
+			<!-- 未使用优惠劵 -->
+			</ul>
+		</section>
+		
+		
+		<!--券已领完-领取失败弹窗-->
+		<section class="mask-box hide" id="z-coupons-mask">
+			<div class="z-cell-box">
+				<div class="z-mask-con pub-padding3">
+					<div class="z-close-mask tr"><img src="images/cancel.png" height="100%" width="auto"/></div>
+					<h3>领取失败</h3>
+					<p class="f24">已经领完啦~~</p>
+					<button class="z-btn f28 z-iknow">我知道了</button>
+				</div>
+			</div>
+		</section>
+		
+		<!--jQuery-->
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<!--layui.js-->
+		<script src="libs/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<!--公共js-->
+		<script src="js/main.js"></script>
+		<!--当前页.js-->
+		<script src="js/list/coupons-center.js"></script>
+	</body>
+</html>

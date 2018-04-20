@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>个人中心</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
+		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
+		<link rel="stylesheet" href="css/h-main.css" />
+		
+	</head>
+	<body class="pub-bg">
+		<!--头部s-->
+		<header class="pub-head  flexc">
+			<div class="go-back"></div>
+			<div class="head-title f32">填写订单</div> 
+			<!--右边绿色文字-->
+			<a href="#" class="head-r flexc f26 head-edit pub-green">购买须知</a>
+			<!--右边分享-->
+			<a href="#" class="head-r flexc head-edit head-share"></a>
+			<!--右边三小点-信息-->
+			<a href="#" class="head-r flexc head-edit head-info-ico"></a>
+		</header>
+		<div class="seat-top"></div>
+		<!--头部e-->
+		
+		<!--弹窗测试按钮-->
+		<div style="width:1rem;background-color: red;" class="try-btn">弹窗测试按钮（下方弹出）</div>
+		<div style="width:1rem;background-color: green;" class="try-btn-two">弹窗测试按钮（确认取消）</div>
+		<!--列表项-->
+		<ul class="mine-list f3">
+			<li>
+				<a href="" class="ali-c">
+					<div class="mine-name flex1">右箭头</div>
+					<div class="pub-right"></div>
+				</a>
+			</li>
+			<li>
+				<a href="" class="ali-c">
+					<div class="mine-name flex1">右箭头</div>
+					<div class="pub-right">右侧内容</div>
+				</a>
+			</li>
+			<li>
+				<a href="" class="ali-c">
+					<div class="mine-name flex1">无箭头</div>
+					<div class="flex1 tr">右侧内容</div>
+				</a>
+			</li>
+			<li>
+				<a href="" class="ali-c">
+					<div class="mine-name">输入框右箭头</div>
+					<input type="text" placeholder="请输入" />
+					<div class="pub-right flex1"></div>
+				</a>
+			</li>
+			<li>
+				<a href="" class="ali-c">
+					<div class="mine-name">输入框箭头</div>
+					<div class="flex1 ali-c">
+						左侧内容可做其他样式修改
+					</div>
+				</a>
+			</li>
+		</ul>
+		<!--底部s-->
+		<div class="seat-bottom"></div>
+		<footer class="pub-foot flex tc">
+			<div class="flex1 foot-one on">
+				<a href="">
+					<div class="foot-ico"></div>
+					<p class="foot-font">首页</p>
+				</a>
+			</div>
+			<div class="flex1 foot-two">
+				<a href="">
+					<div class="foot-ico"></div>
+					<p class="foot-font">五谷商城</p>
+				</a>
+			</div>
+			<div class="flex1 foot-three">
+				<a href="">
+					<div class="foot-ico"></div>
+					<p class="foot-font">五谷山房</p>
+				</a>
+			</div>
+			<div class="flex1 foot-four">
+				<a href="">
+					<div class="foot-ico"></div>
+					<p class="foot-font">购物车</p>
+				</a>
+			</div>
+			<div class="flex1 foot-five">
+				<a href="">
+					<div class="foot-ico"></div>
+					<p class="foot-font">我的</p>
+				</a>
+			</div>
+		</footer>
+		<!--底部e-->
+		
+		<!--下方弹出-窗口-->
+		<section class="mask-box" id="try-box">
+			<section class="box-con">
+				<h3 class="title flexc">产品参数</h3>
+				<ul class="list list-red">
+					<li></li>
+					<li></li>
+				</ul>
+				<div class="make-sure flexc bg-red">确定</div>
+			</section>
+		</section>
+		
+		<!--jq-->
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+		<!--layui.js-->
+		<script src="libs/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<!--公共js-->
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript">
+			$(function () {
+//				下方弹出-弹窗调用
+				$underpup({
+					btn: $(".try-btn"),
+					box:$("#try-box")
+				});
+//				确认取消-弹窗调用
+				layui.use('layer', function(){
+					var layer = layui.layer;
+					//点击
+					$('.try-btn-two').click(function(){
+						//调用封装的$comfirm弹窗
+						$confirm({
+							msg: '确定删除搜索记录吗？',
+							rightbtn:'确认',
+							//点击确定的回调
+							ensure: function(){
+								layer.msg('已删除搜索记录');
+							}
+						});
+					})
+				}); 
+			})
+				
+
+		</script>
+	</body>
+</html>

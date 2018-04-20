@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title></title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
+		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
+		
+		<link rel="stylesheet" type="text/css" href="css/z-main.css"/>
+		
+	</head>
+	<body class="pub-bg">
+		<!--头部s-->
+		<header class="pub-head flexc z-tour-order-head">
+			<div class="z-order-goback"></div>
+			<div class="head-title f32">填写订单</div> 
+		</header>
+		<div class="seat-top"></div>
+		<!--头部e-->
+		<!--村游订单s-->
+		<section class="z-village-tour-order z-grain-hostel-order">
+			<div class="z-hostel-order-msg">
+				<p class="f32">1月27日-1月30日<span>共四晚</span></p>
+				<p class="f24 mt2">一室一厅一卫<span>|</span>WiFi<span>|</span>温泉<span>|</span>游泳池<span>|</span>餐饮</p>
+			</div>
+			<ul class="mine-list f28">
+				<li>
+					<a href="" class="ali-c">
+						<div class="mine-name">&nbsp;房间数</div>
+						<div class="flex1 ali-c">1间</div>
+						<div class="pub-right flex1"></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="ali-c">
+						<div class="mine-name">&nbsp;手机号</div>
+						<input type="text" placeholder="用户接收入住信息" />
+					</a>
+				</li>
+			</ul>
+			<!--选择优惠券-->
+			<ul class="mine-list f28 z-choose-coupon">
+				<li>
+					<a href="h-coupon.html" class="ali-c">
+						<div class="mine-name flex1">优惠券</div>
+						<div class="pub-right"><span class="pub-greya">暂无可用</span></div>
+						<!--有可用优惠券-->
+						<div class="pub-right hide"><span class="pub-red">2张</span></div>
+						<!--有可用优惠券时选择后显示-->
+						<div class="pub-right hide"><span class="pub-red">全场满1000减100</span></div>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<!--村游订单e-->
+		
+		<!--foot-->
+		<footer class="pub-foot confirm-foot flex f3 z-tour-order-foot">
+			<div class="flex1 ali-c mr2 pl3 jus-b">
+				<span class="pub-red f24">总额：<i class="f36">￥836.00</i></span>
+				<a href="javascript:;" class="pub-green f28 z-order-detailed-btn">明细</a>
+			</div>
+			<a href="z-orderpay-mode-hostel.html" class="submit-btn flexc" id="write-order-sub">去支付</a>
+		</footer>
+		<!--foot-->
+		
+		<!--明细弹窗-->
+		<section class="mask-box" id="z-order-detailed">
+			<section class="box-con">
+				<div class="z-close-mask tr"><img src="images/cancel.png" height="100%" width="auto"/></div>
+				<h3 class="title flexc">费用明细</h3>
+				<ul class="list">
+					<li>
+						<div class="jus-b ali-c z-detailed-tit">
+							<h3 class="f28">房费</h3>
+							<p class="f28">￥836.00</p>
+						</div>
+						<div class="z-detailed-msg">
+							<div class="jus-b ali-c">
+								<p>2018-01-28（1间）</p>
+								<p>￥209.00</p>
+							</div>
+							<div class="jus-b ali-c">
+								<p>2018-01-29（1间）</p>
+								<p>￥209.00</p>
+							</div>
+							<div class="jus-b ali-c">
+								<p>2018-01-30（1间）</p>
+								<p>￥209.00</p>
+							</div>
+							<div class="jus-b ali-c">
+								<p>2018-01-31（1间）</p>
+								<p>￥209.00</p>
+							</div>
+						</div>
+					</li>
+					<li class="jus-b ali-c">
+						<h3 class="f28">优惠</h3>
+						<p class="f28">-￥0.00</p>
+					</li>
+					<p class="tr f28 pub-padding3">订单金额：<span class="pub-red">￥836.00</span></p>
+				</ul>
+			</section>
+		</section>
+		
+		<!--jQuery-->
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<!--layui.js-->
+		<script src="libs/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<!--公共js-->
+		<script src="js/main.js"></script>
+		<!--当前页js-->
+		<script src="js/list/grain-hostel-order.js"></script>
+	</body>
+</html>

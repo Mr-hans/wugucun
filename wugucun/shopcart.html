@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title></title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
+		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
+		
+		<link rel="stylesheet" type="text/css" href="css/z-main.css"/>
+	</head>
+	<body> 
+		<!--头部s-->
+		<header class="pub-head  flexc">
+			<!--<div class="go-back"></div>-->
+			<div class="head-title f32">购物车</div>
+			<a href="javascript:;" class="head-r flexc f26 head-edit">编辑</a>
+		</header>
+		<div class="seat-top"></div>
+		<!--头部e-->
+		
+		<!--main content-->
+		<main class="pub-scroll shopcart-scroll">
+			
+			<!--购物车有商品时显示的内容-->
+			<section class="bg-white">	
+				<!--已买商品列表-->
+				<ul class="shopcart-goods">
+					<li class="flex">
+						<div class="shopcart-select flexc">
+							<span class="public-checkbox mr2 shopcart-check-single">
+								<input type="checkbox"/>
+							</span>
+						</div>
+						<div class="goods-img mr2">
+							<a href="goods_detail.html">
+								<img src="images/cart-goods-img1.jpg" alt="" class="fill-img"/>
+							</a>
+						</div>
+						<div class="flex1">
+							<div class="goods-name">
+								<a href="goods_detail.html">
+									<h3 class="twoline">纯手工自酿白酒 五谷村丛林酒博园 小白酒 52度 单瓶装500ml</h3>
+								</a>	
+							</div>
+							<div class="jus-b">
+								<div>
+									<p class="f24 pub-greyb">规格：瓶</p>
+									<p class="f28 pub-red mt18">￥699.00</p>
+								</div>
+								
+								<div class="pub-updown flex mt2">
+									<input type="button" class="pub-updown-down flex1"/>
+									<input type="text" class="pub-updown-num only-number" value="1"/>
+									<input type="button" class="pub-updown-up flex1"/>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="flex">
+						<div class="shopcart-select flexc">
+							<span class="public-checkbox mr2 shopcart-check-single">
+								<input type="checkbox"/>
+							</span>
+						</div>
+						<div class="goods-img mr2">
+							<a href="goods_detail.html">
+								<img src="images/cart-goods-img1.jpg" alt="" class="fill-img"/>
+							</a>
+						</div>
+						<div class="flex1">
+							<div class="goods-name">
+								<a href="goods_detail.html">
+									<h3 class="twoline">纯手工自酿白酒 五谷村丛林酒博园 小白酒 52度 单瓶装500ml</h3>
+								</a>	
+							</div>
+							<div class="jus-b">
+								<div>
+									<p class="f24 pub-greyb">规格：瓶</p>
+									<p class="f28 pub-red mt18">￥699.00</p>
+								</div>
+								
+								<div class="pub-updown flex mt2">
+									<input type="button" class="pub-updown-down flex1"/>
+									<input type="text" class="pub-updown-num only-number" value="1"/>
+									<input type="button" class="pub-updown-up flex1"/>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="flex">
+						<div class="shopcart-select flexc">
+							<span class="public-checkbox mr2 shopcart-check-single">
+								<input type="checkbox"/>
+							</span>
+						</div>
+						<div class="goods-img mr2">
+							<a href="goods_detail.html">
+								<img src="images/cart-goods-img1.jpg" alt="" class="fill-img"/>
+							</a>
+						</div>
+						<div class="flex1">
+							<div class="goods-name">
+								<a href="goods_detail.html">
+									<h3 class="twoline">纯手工自酿白酒 五谷村丛林酒博园 小白酒 52度 单瓶装500ml</h3>
+								</a>	
+							</div>
+							<div class="jus-b">
+								<div>
+									<p class="f24 pub-greyb">规格：瓶</p>
+									<p class="f28 pub-red mt18">￥699.00</p>
+								</div>
+								
+								<div class="pub-updown flex mt2">
+									<input type="button" class="pub-updown-down flex1"/>
+									<input type="text" class="pub-updown-num only-number" value="1"/>
+									<input type="button" class="pub-updown-up flex1"/>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+			
+			<!--为空提示-->
+			<section class="pub-empty-tip">
+				<img src="images/null/car.png" alt="" class="empty-ico myorder-ico"/>
+				<p class="empty-font f28">亲，你的购物车还没有宝贝哦~</p>
+				<a href="shopping-mall.html" class="pub-btn-green h-going f32">去逛逛~</a>
+			</section>
+			<!--系统出错提示-->
+			<section class="pub-empty-tip">
+				<img src="images/cart-error.png" alt="" class="empty-ico myorder-ico"/>
+				<p class="empty-font f28">亲，没有网络了~</p>
+			</section>
+			
+		</main>
+		<!--main content-->
+		
+		<!--foot-->
+		<footer class="confirm-foot-box">
+			<!--结算删除-->
+			<div class="confirm-foot flex f3">
+				<div class="flex1 ali-c jus-b pd-28">
+					<div class="ali-c mr2 shopcart-check-all">
+						<span class="public-checkbox">
+							<input type="checkbox" name="sex"/>
+						</span>
+						<span class="z-choose-num">全选</span>
+					</div>	
+					<span class="pub-red"><i class="cor-red">￥0.00</i></span>
+				</div>
+				<a href="z-write-order.html" class="submit-btn flexc" id="shopcart-to-js">去结算</a>
+				<div class="submit-btn" id="shopcart-to-sc"><div class="flexc">删除所选</div></div>
+			</div>
+		</footer>	
+		<!--底部s-->
+		<div class="seat-bottom"></div>
+		<footer class="pub-foot flex tc">
+			<div class="flex1 foot-one">
+				<a href="index.html">
+					<div class="foot-ico"></div>
+					<p class="foot-font">首页</p>
+				</a>
+			</div>
+			<div class="flex1 foot-two">
+				<a href="shopping-mall.html">
+					<div class="foot-ico"></div>
+					<p class="foot-font">五谷商城</p>
+				</a>
+			</div>
+			<div class="flex1 foot-three">
+				<a href="mountains-house.html">
+					<div class="foot-ico"></div>
+					<p class="foot-font">五谷山房</p>
+				</a>
+			</div>
+			<div class="flex1 foot-four on">
+				<a href="shopcart.html">
+					<div class="foot-ico"></div>
+					<p class="foot-font">购物车</p>
+				</a>
+			</div>
+			<div class="flex1 foot-five">
+				<a href="my-center.html">
+					<div class="foot-ico"></div>
+					<p class="foot-font">我的</p>
+				</a>
+			</div>
+		</footer>
+		<!--底部e-->
+		<!--foot-->
+
+		
+		<!--jq-->
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+		<!--layui.js-->
+		<script src="libs/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<!--公共js-->
+		<script type="text/javascript" src="js/main.js"></script>
+		<!--shopcart.js-->
+		<script type="text/javascript" src="js/list/shopcart.js"></script>
+
+	</body>
+</html>

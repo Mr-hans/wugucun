@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>退款详情</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
+		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
+		<link rel="stylesheet" href="css/h-main.css" />
+		
+	</head>
+	<body class="pub-bg">
+		<!--头部s-->
+		<header class="pub-head flexc border-no">
+			<div class="go-back"></div>
+			<div class="head-title f32">退款详情</div>
+		</header>
+		<div class="seat-top"></div>
+		<!--头部e-->
+		<!-- 订单状态 -->
+		<section class="pub-jbs pub-jbs-two">
+			<h2>请等待商家处理</h2>
+			<p>还剩4天12时57分</p>
+		</section>
+		<!-- 订单状态 -->	
+		<div class="h-zt-font pd-28 bg-white">
+			<div class="dt f28">您已成功发起退款申请，请耐心等待商家处理</div>
+			<ul class="zt-list pub-greya f24">
+				<li>商家同意后，退款将会在1-7个工作日退返至您的账户，请注意查收</li>
+				<li>如商家拒绝，且对订单有疑问，可电话联系商家处理</li>
+				<li>如商家超时未处理，退款申请将达成，退款将会在1-7个工作日退返至您的账户，请注意查收</li>
+			</ul>
+			<div class="bg-white ali-c jus-e off-bg-par">
+				<a href="#" class="off-bg tc f28 pub-green">取消申请</a>
+			</div>
+		</div>
+		<!-- 退款信息 -->
+		<main class="refund-info">
+			<section>
+				<ul class="mine-list">
+					<li>
+						<a href="javascript:;" class="ali-c">
+							<div class="mine-name flex1 f28">退款信息</div>
+						</a>
+					</li>
+				</ul>
+				<!-- 订单列表 -->
+				<section class="myorder-center">
+					<ul class="myorder-box mt2">
+						<li>
+							<div class="myorder-wrap pub-padding3 pub-bg flex">
+								<div class="myorder-img">
+									<img src="images/scneic_03.png" alt="" />
+								</div>
+								<div class="myorder-text flex1 pos-re">
+									<h3 class="twoline f32">水生态温泉度假村</h3>
+									<span>江西省南昌市青云谱区金沙大道北口敬之路1号 ,近昌南大道与...</span>
+									<span class="ico-red mt18"><img src="images/ico-red.png" alt="当月有效"></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<!-- 订单列表 -->
+			<main class="refund-info mt18">
+				<section class="h-sanzuo">
+					<ul class="mine-list pub-padding3 pub-greya h-mine-list">
+						<li class="border-no ali-c f24">
+								<div class="mine-name flex1">水生态温泉度假村成人票  <i class="ml2">x2</i></div>
+								<div class="flex1 tr">￥398.00</div>
+							
+						</li>
+						<li class="border-no ali-c f24">
+								<div class="mine-name flex1">水生态温泉度假村儿童票 <i class="ml2">x1</i></div>
+								<div class="flex1 tr">￥99.00</div>
+							
+						</li>
+						<li class="border-no ali-c f24">
+								<div class="mine-name flex1">景点优惠</div>
+								<div class="flex1 tr">-￥20.00</div>
+							
+						</li>
+						<li class="border-no ali-c f28">
+								<div class="mine-name flex1 pub-black">实付款</div>
+								<div class="flex1 tr pub-red">￥477.00</div>
+							
+						</li>
+					</ul>
+				</section>
+				<ul class="refund-foot mt18 pub-padding3 bg-white tl f24 pub-greya">
+					<li>退款金额：￥477.00</li>
+					<li>申请时间：2018-02-01 11:30</li>
+					<li>退款编号：201802021130123</li>
+				</ul>
+			</main>
+		
+		
+		<!--jq-->
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+		<!--layui.js-->
+		<script src="libs/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<!--公共js-->
+		<script type="text/javascript" src="js/main.js"></script>
+		<!-- 本页js -->
+		<script type="text/javascript" src="js/list/order.js"></script>
+	
+	</body>
+</html>
+
+
+<!-- -------------------这下面是后台返回的"卖家已同意您的退款申请"页面,复制新建页面粘贴即可------------------------ -->
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>退款详情</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
+		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
+		<link rel="stylesheet" href="css/h-main.css" />
+		
+	</head>
+	<body class="pub-bg">
+		<!--头部s-->
+		<header class="pub-head flexc border-no">
+			<div class="go-back"></div>
+			<div class="head-title f32">退款详情</div>
+		</header>
+		<div class="seat-top"></div>
+		<!--头部e-->
+		<!-- 订单状态 -->
+		<section class="pub-jbs pub-jbs-two">
+			<h2>卖家已同意您的退款申请</h2>
+			<p>退款将在1-7个工作日原路返回</p>
+		</section>
+		<!-- 退款信息 -->
+		<main class="refund-info">
+			<section>
+				<ul class="mine-list">
+					<li>
+						<a href="javascript:;" class="ali-c">
+							<div class="mine-name flex1 f28">退款信息</div>
+						</a>
+					</li>
+				</ul>
+				<!-- 订单列表 -->
+				<section class="myorder-center">
+					<ul class="myorder-box mt2">
+						<li>
+							<div class="myorder-wrap pub-padding3 pub-bg flex">
+								<div class="myorder-img">
+									<img src="images/scneic_03.png" alt="" />
+								</div>
+								<div class="myorder-text flex1 pos-re">
+									<h3 class="twoline f32">水生态温泉度假村</h3>
+									<span>江西省南昌市青云谱区金沙大道北口敬之路1号 ,近昌南大道与...</span>
+									<span class="ico-red mt18"><img src="images/ico-red.png" alt="当月有效"></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<!-- 订单列表 -->
+			<main class="refund-info mt18">
+				<section class="h-sanzuo">
+					<ul class="mine-list pub-padding3 pub-greya h-mine-list">
+						<li class="border-no ali-c f24">
+								<div class="mine-name flex1">水生态温泉度假村成人票  <i class="ml2">x2</i></div>
+								<div class="flex1 tr">￥398.00</div>
+							
+						</li>
+						<li class="border-no ali-c f24">
+								<div class="mine-name flex1">水生态温泉度假村儿童票 <i class="ml2">x1</i></div>
+								<div class="flex1 tr">￥99.00</div>
+							
+						</li>
+						<li class="border-no ali-c f24">
+								<div class="mine-name flex1">景点优惠</div>
+								<div class="flex1 tr">-￥20.00</div>
+							
+						</li>
+						<li class="border-no ali-c f28">
+								<div class="mine-name flex1 pub-black">实付款</div>
+								<div class="flex1 tr pub-red">￥477.00</div>
+							
+						</li>
+					</ul>
+				</section>
+				<ul class="refund-foot mt18 pub-padding3 bg-white tl f24 pub-greya">
+					<li>退款金额：￥477.00</li>
+					<li>申请时间：2018-02-01 11:30</li>
+					<li>退款编号：201802021130123</li>
+				</ul>
+			</main>
+		
+		
+		<!--jq-->
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+		<!--layui.js-->
+		<script src="libs/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<!--公共js-->
+		<script type="text/javascript" src="js/main.js"></script>
+		<!-- 本页js -->
+		<script type="text/javascript" src="js/list/order.js"></script>
+	
+	</body>
+</html>
+
+
+<!-- -------------------这下面是后台返回的"退款成功"页面,复制新建页面粘贴即可------------------------ -->
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>退款详情</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
+		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
+		<link rel="stylesheet" href="css/h-main.css" />
+		
+	</head>
+	<body class="pub-bg">
+		<!--头部s-->
+		<header class="pub-head flexc border-no">
+			<div class="go-back"></div>
+			<div class="head-title f32">退款详情</div>
+		</header>
+		<div class="seat-top"></div>
+		<!--头部e-->
+		<!-- 订单状态 -->
+		<section class="pub-jbs pub-jbs-two">
+			<h2>退款成功</h2>
+			<p>2018年2月8日 15:48</p>
+		</section>
+		<ul class="mine-list">
+			<li>
+				<a href="javascript:;" class="ali-c">
+					<div class="mine-name flex1 f28">退款总金额</div>
+					<div class="flex1 tr pub-red">￥477.00</div>
+				</a>
+			</li>
+		</ul>
+		<!-- 退款信息 -->
+		<main class="refund-info">
+			<section>
+				<ul class="mine-list">
+					<li>
+						<a href="javascript:;" class="ali-c">
+							<div class="mine-name flex1 f28">退款信息</div>
+						</a>
+					</li>
+				</ul>
+				<!-- 订单列表 -->
+				<section class="myorder-center">
+					<ul class="myorder-box mt2">
+						<li>
+							<div class="myorder-wrap pub-padding3 pub-bg flex">
+								<div class="myorder-img">
+									<img src="images/scneic_03.png" alt="" />
+								</div>
+								<div class="myorder-text flex1 pos-re">
+									<h3 class="twoline f32">水生态温泉度假村</h3>
+									<span>江西省南昌市青云谱区金沙大道北口敬之路1号 ,近昌南大道与...</span>
+									<span class="ico-red mt18"><img src="images/ico-red.png" alt="当月有效"></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<!-- 订单列表 -->
+			<main class="refund-info mt18">
+				<section class="h-sanzuo">
+					<ul class="mine-list pub-padding3 pub-greya h-mine-list">
+						<li class="border-no ali-c f24">
+								<div class="mine-name flex1">水生态温泉度假村成人票  <i class="ml2">x2</i></div>
+								<div class="flex1 tr">￥398.00</div>
+							
+						</li>
+						<li class="border-no ali-c f24">
+								<div class="mine-name flex1">水生态温泉度假村儿童票 <i class="ml2">x1</i></div>
+								<div class="flex1 tr">￥99.00</div>
+							
+						</li>
+						<li class="border-no ali-c f24">
+								<div class="mine-name flex1">景点优惠</div>
+								<div class="flex1 tr">-￥20.00</div>
+							
+						</li>
+						<li class="border-no ali-c f28">
+								<div class="mine-name flex1 pub-black">实付款</div>
+								<div class="flex1 tr pub-red">￥477.00</div>
+							
+						</li>
+					</ul>
+				</section>
+				<ul class="refund-foot mt18 pub-padding3 bg-white tl f24 pub-greya">
+					<li>退款金额：￥477.00</li>
+					<li>申请时间：2018-02-01 11:30</li>
+					<li>退款编号：201802021130123</li>
+				</ul>
+			</main>
+		
+		
+		<!--jq-->
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+		<!--layui.js-->
+		<script src="libs/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<!--公共js-->
+		<script type="text/javascript" src="js/main.js"></script>
+		<!-- 本页js -->
+		<script type="text/javascript" src="js/list/order.js"></script>
+	
+	</body>
+</html>
+
+<!-- -------------------这下面是后台返回的"退款关闭"页面,复制新建页面粘贴即可------------------------ -->
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>退款详情</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
+		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
+		<link rel="stylesheet" href="css/h-main.css" />
+		
+	</head>
+	<body class="pub-bg">
+		<!--头部s-->
+		<header class="pub-head flexc border-no">
+			<div class="go-back"></div>
+			<div class="head-title f32">退款详情</div>
+		</header>
+		<div class="seat-top"></div>
+		<!--头部e-->
+		<!-- 订单状态 -->
+		<section class="pub-jbs pub-jbs-two">
+			<h2>退款关闭</h2>
+			<p>2018年2月8日 15:48</p>
+		</section>
+		<div class="dt f28 pd-28 bg-white refund-off-info ali-c">因您撤销退款申请，退款已关闭，交易将正常进行。请注交易超时</div>
+		<!-- 退款信息 -->
+		<main class="refund-info">
+			<section>
+				<ul class="mine-list">
+					<li>
+						<a href="javascript:;" class="ali-c">
+							<div class="mine-name flex1 f28">退款信息</div>
+						</a>
+					</li>
+				</ul>
+				<!-- 订单列表 -->
+				<section class="myorder-center">
+					<ul class="myorder-box mt2">
+						<li>
+							<div class="myorder-wrap pub-padding3 pub-bg flex">
+								<div class="myorder-img">
+									<img src="images/scneic_03.png" alt="" />
+								</div>
+								<div class="myorder-text flex1 pos-re">
+									<h3 class="twoline f32">水生态温泉度假村</h3>
+									<span>江西省南昌市青云谱区金沙大道北口敬之路1号 ,近昌南大道与...</span>
+									<span class="ico-red mt18"><img src="images/ico-red.png" alt="当月有效"></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<!-- 订单列表 -->
+			<main class="refund-info mt18">
+				<section class="h-sanzuo">
+					<ul class="mine-list pub-padding3 pub-greya h-mine-list">
+						<li class="border-no ali-c f24">
+								<div class="mine-name flex1">水生态温泉度假村成人票  <i class="ml2">x2</i></div>
+								<div class="flex1 tr">￥398.00</div>
+							
+						</li>
+						<li class="border-no ali-c f24">
+								<div class="mine-name flex1">水生态温泉度假村儿童票 <i class="ml2">x1</i></div>
+								<div class="flex1 tr">￥99.00</div>
+							
+						</li>
+						<li class="border-no ali-c f24">
+								<div class="mine-name flex1">景点优惠</div>
+								<div class="flex1 tr">-￥20.00</div>
+							
+						</li>
+						<li class="border-no ali-c f28">
+								<div class="mine-name flex1 pub-black">实付款</div>
+								<div class="flex1 tr pub-red">￥477.00</div>
+							
+						</li>
+					</ul>
+				</section>
+				<ul class="refund-foot mt18 pub-padding3 bg-white tl f24 pub-greya">
+					<li>退款金额：￥477.00</li>
+					<li>申请时间：2018-02-01 11:30</li>
+					<li>退款编号：201802021130123</li>
+				</ul>
+			</main>
+		
+		
+		<!--jq-->
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+		<!--layui.js-->
+		<script src="libs/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<!--公共js-->
+		<script type="text/javascript" src="js/main.js"></script>
+		<!-- 本页js -->
+		<script type="text/javascript" src="js/list/order.js"></script>
+	
+	</body>
+</html>
+

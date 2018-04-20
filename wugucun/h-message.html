@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>消息</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
+		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
+		<link rel="stylesheet" href="css/h-main.css" />
+		
+	</head>
+	<body class="pub-bg">
+		<!--头部s-->
+		<header class="pub-head  flexc">
+			<div class="go-back"></div>
+			<div class="head-title f32">消息</div>
+		</header>
+		<div class="seat-top"></div>
+		<!--头部e-->
+		<ul class="mt18 bg-white message">
+			<li class="border-b pd-28 press">
+				<a href="system-message.html" class="flex ali-c">
+					<div class="img">
+						<img src="images/me-icon/systematicnotification.png" alt="">
+						<span class="mess-ico-num tc">1</span>
+					</div>
+					<div class="ml2">
+						<div class="message-title flex">
+							<h2 class="flex1 f28">系统消息</h2>
+							<p class="message-date flex1 tr f22 pub-greyb">14:47</p>
+						</div>
+						<p class="oneline f24 pub-greya">五谷村2.0全新上线，修复系统bug，快来体验..</p>
+					</div>
+				</a>
+			</li>
+			
+			<li class="border-b pd-28 press">
+				<a href="#" class="flex ali-c">
+					<div class="img"><img src="images/me-icon/head3.png" alt=""></div>
+					<div class="ml2">
+						<div class="message-title flex">
+							<h2 class="flex1 f28">开往午夜的凌晨</h2>
+							<p class="message-date flex1 tr f22 pub-greyb">14:47</p>
+						</div>
+						<p class="oneline f24 pub-greya"><span class="pub-green">评论你的帖子：</span>五谷村2.0全新上线，修复系统bug，快来体验..</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+		<!--为空提示-->
+		<section class="pub-empty-tip">
+			<img src="images/null/news.png" alt="" class="empty-ico myorder-ico"/>
+			<p class="empty-font f28">亲,您还没有通知哦~</p>
+		</section>
+		<!--jq-->
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+		<!--layui.js-->
+		<script src="libs/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 公共js -->
+		<script type="text/javascript" src="js/main.js"></script>
+		<!-- 本页js -->
+		<script type="text/javascript" src="js/list/h-message.js"></script>
+	</body>
+</html>

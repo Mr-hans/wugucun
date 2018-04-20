@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>发表评价</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
+		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
+		<link rel="stylesheet" href="css/h-main.css" />
+		
+	</head>
+	<body class="pub-bg"> 
+		<!--head-->
+		<header class="pub-head flexc">
+			<div class="go-back"></div>
+			<div class="head-title f32">发表评价</div>
+		</header>
+		<div class="seat-top"></div>
+		<!--head-->
+		
+		<!--main content-->
+		<main class="pub-scroll bottom logistics">
+			<form action="">
+				<div class="comment-info bg-white border-b mt18">
+					<!--商品信息-->
+					<div class="logistics-title flex  comment-img">
+						<div class="img-box">
+							<img src="images/going_pro_03.jpg" alt="" class="fill-img"/>
+						</div>
+						<div class="flex1 ali-c">
+							<!--打分-->
+							<div class="comment-star">
+								<section class="starability-container flex flexc">
+									<fieldset class="starability-grow"> 
+										<input type="radio" id="rate5-3" name="rating" value="5">
+										<label for="rate5-3" title="Amazing">5 stars</label>
+								
+										<input type="radio" id="rate4-3" name="rating" value="4">
+										<label for="rate4-3" title="Very good">4 stars</label>
+								
+										<input type="radio" id="rate3-3" name="rating" value="3">
+										<label for="rate3-3" title="Average">3 stars</label>
+								
+										<input type="radio" id="rate2-3" name="rating" value="2">
+										<label for="rate2-3" title="Not good">2 stars</label>
+								
+										<input type="radio" id="rate1-3" name="rating" value="1">
+										<label for="rate1-3" title="Terrible">1 star</label>
+									</fieldset>
+								</section>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<!--申请内容-->
+				<div class="service-apply bg-white pd-28">
+					<div class="service-apply-area">
+						<textarea class="f32 hots-t" name="" placeholder="您的评价" rows="" cols=""></textarea>
+					</div>
+					<div class="service-photos flex-wrap">
+						<!--上传的图片列表-->
+
+						
+						<!--上传按钮-->
+						<div class="item service-upload-btn" id="service-upload-btn">
+							<img src="images/service-btn_03.png" alt="" />
+						</div>
+					</div>
+				</div>
+				
+				<div class="submit_btn jus-c">
+					<a href="" class="pub-btn-danger pub-btn-green f32 btn-ccc">提交评价</a>
+				</div>
+			</form>
+		</main>
+		<!--main content-->
+		
+		
+		
+		<!--jq-->
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+		<!--layui.js-->
+		<script src="libs/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<!--公共js-->
+		<script type="text/javascript" src="js/main.js"></script>
+		<!--本页js-->
+		<script src="js/list/comment.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+</html>

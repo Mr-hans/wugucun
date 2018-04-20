@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title></title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
+		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
+		
+		<link rel="stylesheet" type="text/css" href="css/z-main.css"/>
+		
+	</head>
+	<body class="pub-bg">
+		<!--头部s-->
+		<header class="pub-head  flexc">
+			<div class="go-back"></div>
+			<div class="head-title f32">订单支付</div> 
+		</header>
+		<div class="seat-top"></div>
+		<!--头部e-->
+		<!--支付金额-->
+		<section class="z-pay-price-box tc pub-padding3 bg-white">
+			<h3 class="f32 pub-greya mt2">支付金额</h3>
+			<div class="z-pay-price pub-red">￥1035.00</div>
+		</section>
+		<p class="f26 pub-greyb pub-padding3">请在30分钟之内完成支付</p>
+		<!--支付方式-->
+		<ul class="paytype-list bg-white">
+			<li class="ali-c item">
+				<img src="images/balancepaid.png" alt="" class="pay-ico"/>
+				<div class="flex1">
+					<span>余额支付</span>
+					<p class="f20 pub-greyb">剩下余额：￥561.20</p>
+				</div>
+				<span class="public-checkbox on">
+					<input type="checkbox checked"/>
+				</span>
+			</li>
+			<li class="ali-c item">
+				<img src="images/pay.png" alt="" class="pay-ico"/>
+				<div class="flex1">
+					<span>工分支付</span>
+					<p class="f20 pub-greyb">剩下工分：4336分</p>
+				</div>
+				<span class="public-checkbox">
+					<input type="checkbox checked"/>
+				</span>
+			</li>
+			<li class="ali-c item">
+				<img src="images/ico-wx.png" alt="" class="pay-ico"/>
+				<span class="flex1">微信支付</span>
+				<span class="public-checkbox">
+					<input type="checkbox checked"/>
+				</span>
+			</li>
+			<li class="ali-c item yue">
+				<img src="images/ico-yl.png" alt="" class="pay-ico"/>
+				<span class="flex1">银联支付</span>
+				<span class="public-checkbox">
+					<input type="checkbox"/>
+				</span>
+			</li>
+		</ul>
+		
+		<div class="pay-submit">
+			<a href="javascript:;" class="pub-btn-red z-pay-sure-btn">确认支付</a>
+		</div>
+		
+		
+		<!--支付密码弹窗-->
+		<section class="mask-box" id="z-paypass-box">
+			<section class="box-con">
+				<div class="pub-padding3 tc f32">
+					<div class="z-go-back"></div>
+					<div class="head-title f32">请输入支付密码</div> 
+				</d>
+				
+				<div class="pwd-control" id="payPwd">
+			        <div class="box">
+			            <div class="flex-1 item"><input maxlength="1" type="tel"></div>
+			            <div class="flex-1 item"><input maxlength="1" type="tel"></div>
+			            <div class="flex-1 item"><input maxlength="1" type="tel"></div>
+			            <div class="flex-1 item"><input maxlength="1" type="tel"></div>
+			            <div class="flex-1 item"><input maxlength="1" type="tel"></div>
+			            <div class="flex-1 item"><input maxlength="1" type="tel"></div>
+			        </div>
+			        <div class="tr mt2"><a href="forget-password1.html" class="z-forgot-paypass-btn">忘记密码？</a></div>
+			    </div>
+			    
+			</section>
+		</section>
+			
+		<!--jQuery-->
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<!--layui.js-->
+		<script src="libs/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<!--支付密码弹窗-->
+		<script src="libs/paypwd.js"></script>
+		<!--公共js-->
+		<script src="js/main.js"></script>
+		<!--当前页.js-->
+		<script src="js/list/z-orderpay-mode-hostel.js"></script>
+	</body>
+</html>
