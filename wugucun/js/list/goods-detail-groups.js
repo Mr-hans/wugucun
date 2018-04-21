@@ -71,10 +71,14 @@ $(function () {
 		var layer = layui.layer;
 //		单独购买
 		$(".alone-buy").click(function(){
-			if ($(".goods-spec .list li").hasClass("on")) {
-				$("#z-jioncart-box").removeClass('top');
-				toggleBody(0);  //弹窗消失的时候
-				window.location.href='z-write-order.html';
+			if ($("#z-jioncart-box").hasClass('top')) {
+				if ($(".z-spec-one .list li").hasClass("on")&&$(".z-spec-two .list li").hasClass("on")) {
+					$("#z-jioncart-box").removeClass('top');
+					toggleBody(0);  //弹窗消失的时候
+					window.location.href='z-write-order.html';
+				} else if(!$(".z-spec-one .list li").hasClass("on")||!$(".z-spec-two .list li").hasClass("on")){
+					layer.msg('请选择商品属性');
+				}
 			} else{
 				$("#z-jioncart-box").addClass('top');
 				toggleBody(1)  //在跳出弹窗的时候	
@@ -82,10 +86,14 @@ $(function () {
 		})		
 //		拼团购买
 		$(".groups-buy").click(function(){
-			if ($(".goods-spec .list li").hasClass("on")) {
-				$("#z-jioncart-box").removeClass('top');
-				toggleBody(0);  //弹窗消失的时候
-				window.location.href='z-write-order.html';
+			if ($("#z-jioncart-box").hasClass('top')) {
+				if ($(".z-spec-one .list li").hasClass("on")&&$(".z-spec-two .list li").hasClass("on")) {
+					$("#z-jioncart-box").removeClass('top');
+					toggleBody(0);  //弹窗消失的时候
+					window.location.href='z-write-order.html';
+				} else if(!$(".z-spec-one .list li").hasClass("on")||!$(".z-spec-two .list li").hasClass("on")){
+					layer.msg('请选择商品属性');
+				}
 			} else{
 				$("#z-jioncart-box").addClass('top');
 				toggleBody(1)  //在跳出弹窗的时候	
@@ -97,12 +105,11 @@ $(function () {
 	$("#z-jioncart-box").find(".z-close-jioncart").click(function(){
 		$("#z-jioncart-box").removeClass('top');
 		toggleBody(0)  //弹窗消失的时候
-		$(".goods-spec .list li").removeClass("on");
 	})
 	//购物车弹窗-选择产品规格
 	$('.goods-spec ul li').click(function(){
-		$(this).addClass('on').siblings().removeClass('on');
-	});		
+		$(this).toggleClass('on').siblings().removeClass('on');
+	});	
 //	产品参数	
 	$underpup({
 		btn: $(".z-parameter-btn"),

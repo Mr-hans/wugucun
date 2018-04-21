@@ -18,6 +18,7 @@ $(function () {
 		max:6,
 		type:"password",
 		callback:function(arr) {
+			alert(arr);
 			window.location.href='z-orderpay-success.html';
 		}
 	})

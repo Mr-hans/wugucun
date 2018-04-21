@@ -669,10 +669,12 @@ input:checked+label:before {
 }
 .vip-cont .del-null{
 	color: #999;
+	
 }
 .vip-cont .del-null img{
 	width: 0.3rem;
 	margin-right: 0.04rem;
+	vertical-align: top;
 }
 .vip-date{
 	height: 0.68rem;
@@ -810,23 +812,23 @@ input:checked+label:before {
 }
 .adderss-tabs .right a {
     background: url(../images/address-ico_07.png) no-repeat left center;
-    background-size: 0.3rem auto;
-    -webkit-background-size: 0.3rem auto;
+    background-size: 0.26rem auto;
+    -webkit-background-size: 0.26rem auto;
 }
 .adderss-tabs .right a, .adderss-tabs .right span {
     padding-left: 0.34rem;
     margin-left: 0.4rem;
     height: 0.4rem;
-    line-height: 0.4rem;
+    line-height: 0.44rem;
 }
 .adderss-tabs .right span {
     background: url(../images/address-ico_09.png) no-repeat left center;
-    background-size: 0.3rem auto;
-    -webkit-background-size: 0.3rem auto;
+    background-size: 0.26rem auto;
+    -webkit-background-size: 0.26rem auto;
 }
 .adderss-tabs .left.on .check {
     border: 1px solid #7bc149;
-    background: url(../images/address-ico_03.png) no-repeat center;
+    background: url(../images/check3.png) no-repeat center;
     background-size: 100%;
     -webkit-background-size: 100%;
 }
@@ -862,7 +864,7 @@ input:checked+label:before {
 }
 .add-address-name .radio.on .check {
 	border: none;
-    background: url(../images/address-ico_03.png) no-repeat center;
+    background: url(../images/check3.png) no-repeat center;
     background-size: 100%;
     -webkit-background-size: 100%;
 }
@@ -883,7 +885,10 @@ input:checked+label:before {
 }
 .san-city li input{
 	width: 100%;
-	height: 0.87rem;
+	font-size: 0.28rem;
+}
+#Address input{
+	text-align: right;
 }
 #default{
 	height: 0.88rem;
@@ -893,12 +898,21 @@ input:checked+label:before {
     width: 5.7rem;
 }
 /*意见反馈*/
+.feedback-cont{
+	position: relative;
+}
+.feedback-cont .limit-words{
+	position: absolute;
+	right: 0.2rem;
+	top: 2.6rem;
+}
 .feedback-cont textarea{
 	padding: 0.3rem;
 	width: 100%;
 	height: 3rem;
 	font-size: 0.28rem;
 	line-height: 0.4rem;
+	resize: none;
 }
 .about-logo{
 	height: 2.6rem;
@@ -974,7 +988,7 @@ input:checked+label:before {
 .sys-date{
 	width: 2.5rem;
 	height: 0.3rem;
-	line-height: 0.3rem;
+	line-height: 0.34rem;
 	font-size: 0.2rem;
 	background-color: #ccc;
 	margin: 0.3rem auto;
@@ -993,8 +1007,13 @@ input:checked+label:before {
 	height: 3.3rem;
 }
 .adit-photo .photo-img{
+	overflow: hidden;
 	width: 1.8rem;
 	height: 1.8rem;
+	border-radius: 50%;
+}
+.adit-photo .photo-img img{
+	width: 100%;
 }
 .gender-box{
 	position: fixed;
@@ -1062,8 +1081,8 @@ input:checked+label:before {
 	line-height: 0.6rem;
 }
 .footprint-list li{
-	width: 2.46rem;
-	margin: 0 1px;
+	width: 33.333333%;
+	/*margin: 0 1px;*/
 }
 .footprint-list li .img{
 	width: 2.46rem;
@@ -1254,16 +1273,16 @@ input:checked+label:before {
     width: 0.4rem;
     margin-right: 0.2rem;
 }
-.public-checkbox.on {
+.h-gopay .public-checkbox.on {
     background: url(../images/checkbox-ico1.png) no-repeat center;
     background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
 }
-.public-checkbox input {
+.h-gopay .public-checkbox input {
     display: none;
 }
-.public-checkbox {
+.h-gopay .public-checkbox {
     display: inline-block;
     width: 0.34rem;
     height: 0.34rem;

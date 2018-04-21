@@ -190,7 +190,7 @@ table{border-collapse:collapse;}
 	padding-right: 0.36rem;
 	min-width: 0.2rem;
 	height: 100%;
-	line-height: 0.86rem;
+	line-height: 0.88rem;
 	text-align: right;
 	background: url('../images/ico-to.png') no-repeat center right;
 	background-size: 0.36rem auto;
@@ -701,7 +701,7 @@ color: #fff;
 	width: 1rem;
 	height: 0.44rem;
 	font-size: 0.2rem;
-	line-height: 0.36rem;
+	line-height: 0.44rem;
 	text-align: center;
 	border-radius: 36px;
 	border: 0.04rem solid #95cd6d;
@@ -734,7 +734,7 @@ color: #fff;
 	line-height: .3rem;
 }
 .coupon-text i{
-	position: absolute;right: .1rem;top: .06rem;
+	position: absolute;right: .1rem;top: 0.08rem;
 }
 
 /*优惠劵失效*/

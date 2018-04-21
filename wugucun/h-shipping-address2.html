@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
 		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
 		<link rel="stylesheet" href="css/h-main.css" />
-		<link rel="stylesheet" type="text/css" href="libs/diz/css/LArea.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ydui.css"/>
 	</head>
 	<body class="pub-bg">
 		<form action="">
@@ -55,10 +55,9 @@
 				</ul>
 				<div class="vip-date pd-28 f3">收货地址</div>
 				<ul class="mine-list san-city pd-28 the-map">
-					<li class="ali-c border-b">
-						<div class="mine-name flex1 pub-greya f28">省/市/区县</div>
-						<div class="pub-right pub-greyb f28 sectec-city">请选择</div>
-						<input type="hidden" name="aaa" id="aaa" value="" />
+					<li class="ali-c border-b" id="Address">
+						<div class="f28 sectec-city pub-greya flex1">省/市/区县</div>
+						<div class="pub-right"><input type="text" readonly="readonly" placeholder="请选择" value="" /></div>
 					</li>
 					<li class="flex ali-c">
 						<div class="ali-c pub-greya f28">详细地址：</div>
@@ -87,8 +86,8 @@
 		<!--公共js-->
 		<script type="text/javascript" src="js/main.js"></script>
 		<!--省市区选择-->
-		<script src="libs/diz/js/LAreaData1.js" type="text/javascript" charset="utf-8"></script>
-		<script src="libs/diz/js/LArea.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/ydui.citys.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/ydui.js" type="text/javascript" charset="utf-8"></script>
 		<!-- 本页js -->
 		<script type="text/javascript" src="js/list/h-add-address.js"></script>
 	</body>

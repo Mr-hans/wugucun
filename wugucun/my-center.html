@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="libs/layui/css/layui.mobile.css" /><!--layui.css-->
 		<link rel="stylesheet" href="css/main.css" /><!--全局css-->
 		<link rel="stylesheet" href="css/h-main.css" />
+		<link rel="stylesheet" href="css/z-main.css" />
 	</head>
 	<body class="pub-bg">
 		<!--头部s-->
@@ -24,7 +25,7 @@
 					<div class="flex head-info h-login">
 						<div class="head-photo"><img src="images/my-head.png" alt=""></div>
 						<div class="h-myhead pd-28">
-							<h2 class="f36">青木占城<span class="h-logo"><img src="images/me-icon/z-icon1.png" alt="">准村名</span></h2>
+							<h2 class="f36">青木占城<span class="h-logo"><img src="images/me-icon/z-icon1.png" alt="">准村民</span></h2>
 							<p class="f28">15179178785</p>
 						</div>
 					</div>
@@ -169,8 +170,8 @@
 						<p class="foot-font f24">收货地址</p>
 					</a>
 				</li>
-				<li class="flexc">
-					<a href="">
+				<li class="flexc h-share">
+					<a href="#">
 						<div class="h-ico">
 							<img src="images/me-icon/present.png" alt="分享有礼">
 						</div>
@@ -186,7 +187,7 @@
 					</a>
 				</li>
 				<li class="flexc">
-					<a href="about-us.html">
+					<a href="z-about-us.html">
 						<div class="h-ico">
 							<img src="images/me-icon/about.png" alt="关于我们">
 						</div>
@@ -239,12 +240,68 @@
 			</div>
 		</footer>
 		<!--底部e-->
-		
+		<!--分享弹窗-->
+		<section class="mask-box" id="z-share-box">
+			<section class="box-con">
+				<ul class="list pub-bg flex-wrap">
+					<li>
+						<a href="">
+							<div class="z-share-icon"><img src="images/wechat.png" class="fill-img"/></div>
+							<p>微信好友</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="z-share-icon"><img src="images/pengyouquan.png" class="fill-img"/></div>
+							<p>朋友圈</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="z-share-icon"><img src="images/qq.png" class="fill-img"/></div>
+							<p>QQ好友</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="z-share-icon"><img src="images/kongjian.png" class="fill-img"/></div>
+							<p>QQ空间</p>
+						</a>
+					</li>
+				</ul>
+				<div class="make-sure flexc">取消</div>
+			</section>
+		</section>
 		<!--jq-->
 		<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
 		<!--layui.js-->
 		<script src="libs/layui/layui.js" type="text/javascript" charset="utf-8"></script>
 		<!--公共js-->
 		<script type="text/javascript" src="js/main.js"></script>
+		<script>
+			$(function(){
+				
+				//分享弹窗
+	$underpup({
+		btn: $(".h-share"),
+		box:$("#z-share-box")
+	});
+	//阻止冒泡
+	//如果提供了事件对象，则这是一个非IE浏览器
+	$(".h-me-ico .flexc").click(function (e) {
+		if ( e && e.stopPropagation ){
+		　　// 因此它支持W3C的stopPropagation()方法
+			e.stopPropagation();
+		}else{
+		　　//否则，我们需要使用IE的方式来取消事件冒泡
+		　　
+			window.event.cancelBubble = true;
+			return false;
+		}
+	})
+				
+			})
+			
+		</script>
 	</body>
 </html>

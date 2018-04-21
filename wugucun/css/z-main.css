@@ -122,10 +122,10 @@
 }
 .z_index_head .z_head_left p{
 	padding-right: 0.26rem;
-	margin-right: 0.24rem;
+	/*margin-right: 0.24rem;*/
 	color: #FFFFFF;
-	background: url(../images/ico-under.png) center right no-repeat;
-	background-size: 0.2rem auto;
+	/*background: url(../images/ico-under.png) center right no-repeat;
+	background-size: 0.2rem auto;*/
 }
 .z_index_head .z_head_center{
 	display: block;
@@ -262,7 +262,7 @@
 .z_activity_wrap .time-item strong {
     color: #ea3535;
     line-height: 0.28rem;
-    font-size: 0.24rem;
+    font-size: 0.20rem;
     margin-right: 0.06rem;
     border: 1px solid #ea3535;
     border-radius: 3px;
@@ -632,7 +632,7 @@
 .goods-foot .left .ico-cart .left-ico i{
 	position: absolute;
 	right: -0.2rem;
-	top:-0.12rem;
+	top:-0.06rem;
 	padding: 0.04rem 0.06rem;
 	line-height: 0.18rem;
 	font-size: 0.22rem;
@@ -1132,7 +1132,7 @@
 	display: inline-block;
 	width: 1.2rem;
 	height: 0.46rem;
-	line-height: 0.46rem;
+	line-height: 0.5rem;
 	border-radius: 4px;
 	font-size: 0.28rem;
 }
@@ -1304,7 +1304,7 @@
 }
 .z-purchase-notice li span{
 	display: inline-block;
-	width: 0.38rem;
+	width: 0.46rem;
 }
 .pub-head .z-order-goback{
 	width: 0.8rem;
@@ -1947,7 +1947,7 @@
 .z-reminding-btn{
 	width: 1.38rem;
 	height: 0.46rem;
-	line-height: 0.46rem;
+	line-height: 0.5rem;
     border-radius: 4px;
     font-size: 0.28rem;
 }
